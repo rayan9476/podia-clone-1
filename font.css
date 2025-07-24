@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Stabil Grotesk";
+  src: url("./fonts/StabilGrotesk/StabilGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Stabil Grotesk";
+  src: url("./fonts/StabilGrotesk/StabilGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Stabil Grotesk";
+  src: url("./fonts/StabilGrotesk/StabilGrotesk-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}

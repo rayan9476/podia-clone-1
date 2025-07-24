@@ -1,0 +1,2674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- lottie & GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+
+    <!-- Locomotive Scroll -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+    />
+
+    <!-- fonts Preload -->
+
+    <link
+      rel="preload"
+      href="/fonts/StabilGrotesk/StabilGrotesk-Regular (1).woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/StabilGrotesk/StabilGrotesk-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/StabilGrotesk/StabilGrotesk-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      href="fonts/helvetica-rounded-bold-5871d05ead8de.otf"
+      as="font"
+      type="font/otf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="font.css" />
+    <link href="output.css" rel="stylesheet" />
+
+    <!-- favicon -->
+
+    <link rel="icon" href="image/favicon.svg" type="image/x-icon" />
+
+    <!-- meta tags an tittle  -->
+    <title>Sell your digital products in 5 clicks | Podia</title>
+    <meta
+      name="description"
+      content="Launch and sell your digital products effortlessly with Podia. No coding needed — just five clicks and you're ready to go."
+    />
+    <link rel="canonical" href="https://yourdomain.com/index.html" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Sell your digital products in 5 clicks | Podia"
+    />
+    <meta
+      property="og:description"
+      content="Launch and sell your digital products effortlessly with Podia. No coding needed — just five clicks and you're ready to go."
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/image/twitter-card-website-index.png"
+    />
+    <meta property="og:url" content="https://yourdomain.com/index.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sell your digital products in 5 clicks | Podia"
+    />
+    <meta
+      name="twitter:description"
+      content="Launch and sell your digital products effortlessly with Podia. No coding needed — just five clicks and you're ready to go."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourdomain.com/image/twitter-card-website-index.png"
+    />
+  </head>
+  <body>
+    <div
+      class="overlay z-50 items-center justify-center min-h-[100vh] w-full md:w-full bg-[#FFFFFF] fixed mt-14 active"
+    >
+      <div class="flex mt-[157px] relative">
+        <ul
+          class="items-center w-[95%] ml-[22px] mr-[16px] mt-[-88px] font-sans font-medium text-[16px] text-[#10242F]"
+        >
+          <a href="website.html">
+            <li
+              class="py-[22px] pl-[26px] pr-10 mb-[15px] bg-[#F5F5F5] rounded-[15px] transition duration-[0.3s] ease font-sans text-[20px] text-[06040E] cursor-pointer"
+            >
+              Website
+            </li>
+          </a>
+          <a href="Email.html">
+            <li
+              class="py-[22px] pl-[26px] pr-[30px] mb-[15px] bg-[#F5F5F5] rounded-[15px] transition duration-[0.3s] ease font-sans text-[20px] text-[06040E] cursor-pointer"
+            >
+              Email
+            </li>
+          </a>
+          <ul class="w-full">
+            <!-- Online Store List Item -->
+            <li
+              id="dropdownTrigger1"
+              class="relative py-[22px] pl-[26px] pr-10 mb-[15px] bg-[#F5F5F5] rounded-[15px] cursor-pointer transition duration-300"
+              onclick="toggleSubnav()"
+            >
+              <div class="flex items-center justify-between">
+                <a
+                  href="#podia"
+                  class="text-[20px] font-sans text-[#06040E]"
+                  id="dropdownText"
+                >
+                  Online store
+                </a>
+                <i
+                  id="arrowIcon"
+                  class="fa-solid fa-caret-down text-[14px] transition"
+                ></i>
+              </div>
+
+              <!-- Dropdown Panel -->
+              <div id="subnav" class="hidden mt-4 rounded-[10px] p-4">
+                <h2 class="uppercase text-sm font-bold mb-2 text-[#E1EDF2]">
+                  Products
+                </h2>
+                <ul class="space-y-1 text-[15px]">
+                  <li>
+                    <a
+                      href="/online-store/"
+                      class="block font-normal text-[#E1EDF2]"
+                      >Online store</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/online-courses/"
+                      class="block font-normal text-[#E1EDF2]"
+                      >Online courses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/digital-downloads/"
+                      class="block font-normal text-[#E1EDF2]"
+                      >Digital downloads</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/webinars/"
+                      class="block font-normal text-[#E1EDF2]"
+                      >Webinars</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/coaching/"
+                      class="block font-normal text-[#E1EDF2]"
+                      >Coaching</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/community/"
+                      class="block font-normal text-[#E1EDF2]"
+                      >Community</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a href="Switch.html">
+            <li
+              class="py-[21px] pl-[26px] pr-[30px] mb-[15px] bg-[#F5F5F5] rounded-[15px] transition duration-[0.3s] ease font-sans text-[20px] text-[06040E] cursor-pointer"
+            >
+              Switch to podia
+            </li>
+          </a>
+
+          <a href="Pricing.html">
+            <li
+              class="py-[21px] pl-[26px] pr-[30px] bg-[#F5F5F5] rounded-[15px] transition duration-[0.3s] ease font-sans text-[20px] text-[06040E] cursor-pointer"
+            >
+              Pricing
+            </li>
+          </a>
+        </ul>
+        <div
+          class="Login-btn flex items-center justify-center absolute -bottom-[5.5rem] pl-[22px] pr-[14px] w-full"
+        >
+          <form action="Login.html" method="GET" class="w-full">
+            <button
+              class="text-[#ffffff] flex text-[20px] w-full pl-[26px] py-[21px] rounded-[15px] cursor-pointer bg-[#06040E] font-sans font-medium"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="navbar flex items-center justify-center h-[56px] w-full md:h-[6vh] lg:h-[60px] fixed bg-[#A5C8D8] z-50"
+    >
+      <header class="flex items-center justify-between w-full h-full">
+        <div
+          class="navbar1 flex items-center gap-[20px] md:mt-[-1px] h-full relative left-4"
+        >
+          <svg
+            class="cursor-pointer"
+            width="82"
+            height="40"
+            viewBox="0 0 600 208"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M426.204 23.724C426.204 10.4634 436.335 0.00793457 449.184 0.00793457C462.528 0.00793457 473.891 10.4634 473.891 23.724C473.891 37.4946 462.528 47.6951 449.184 47.6951C436.335 47.6951 426.204 37.4946 426.204 23.724Z"
+              fill="#1F1738"
+            ></path>
+            <path
+              d="M436.182 63.7851C433.617 63.0544 430.883 64.8724 430.883 67.5398V163.775C430.883 165.834 432.552 167.503 434.61 167.503H465.475C467.533 167.503 469.202 165.834 469.202 163.775V67.0485C469.202 64.3536 466.416 62.5343 463.844 63.3367C459.148 64.8015 454.206 65.5778 449.184 65.5778C444.636 65.5778 440.28 64.9523 436.182 63.7851Z"
+              fill="#1F1738"
+            ></path>
+            <path
+              d="M522.519 169.991C498.881 169.991 481.712 156.306 481.712 134.409C481.712 110.771 502.365 96.8365 538.942 93.1041L557.122 91.1791C558.811 91.0003 560.092 89.5764 560.092 87.8788C560.092 76.184 553.373 68.4705 541.679 68.4705C532.276 68.4705 525.089 73.7077 523.017 83.6386C522.613 85.5763 520.97 87.0907 518.992 87.0376L489.237 86.2388C487.153 86.1829 485.506 84.4219 485.757 82.3526C488.896 56.4193 512.058 37.6162 542.923 37.6162C575.021 37.6162 597.913 58.7663 597.913 89.1229V128.935C597.913 140.278 598.649 153.462 599.964 163.104C600.277 165.405 598.516 167.503 596.194 167.503H566.27C564.545 167.503 563.031 166.32 562.704 164.625C561.913 160.521 561.585 156.54 561.585 151.08C553.871 162.775 539.191 169.991 522.519 169.991ZM520.031 131.174C520.031 139.385 526.252 144.113 535.209 144.113C549.143 144.113 560.341 132.667 560.341 116.991C560.341 115.271 558.837 113.937 557.129 114.142L541.679 115.996C528.491 117.489 520.031 121.47 520.031 131.174Z"
+              fill="#1F1738"
+            ></path>
+            <path
+              d="M338.205 170.239C304.613 170.239 280.726 143.117 280.726 104.549C280.726 65.7328 304.613 38.6109 338.205 38.6109C353.88 38.6109 366.819 44.5827 375.777 55.0333V3.83879C375.777 1.78033 377.446 0.111623 379.504 0.111623H410.369C412.427 0.111623 414.096 1.78033 414.096 3.83879V163.775C414.096 165.833 412.427 167.502 410.369 167.502H379.504C377.446 167.502 375.777 165.833 375.777 163.775V153.817C366.819 164.267 353.88 170.239 338.205 170.239ZM319.294 104.549C319.294 124.455 331.735 138.638 348.655 138.638C365.824 138.638 378.016 124.455 378.016 104.549C378.016 84.3946 365.824 70.2116 348.655 70.2116C331.735 70.2116 319.294 84.6435 319.294 104.549Z"
+              fill="#1F1738"
+            ></path>
+            <path
+              d="M207.143 171.235C168.078 171.235 139.712 143.367 139.712 104.55C139.712 65.4846 168.078 37.6162 207.143 37.6162C246.457 37.6162 274.823 65.4846 274.823 104.55C274.823 143.367 246.457 171.235 207.143 171.235ZM178.279 104.55C178.279 124.705 190.223 138.888 207.143 138.888C224.312 138.888 236.256 124.705 236.256 104.55C236.256 84.1464 224.312 69.9634 207.143 69.9634C190.223 69.9634 178.279 84.1464 178.279 104.55Z"
+              fill="#1F1738"
+            ></path>
+            <path
+              d="M3.72717 207.992C1.66871 207.992 0 206.323 0 204.265V45.0752C0 43.0168 1.66871 41.348 3.72717 41.348H34.5918C36.6503 41.348 38.319 43.0168 38.319 45.0752V55.2822C47.2767 44.5828 60.2155 38.611 76.1403 38.611C109.732 38.611 133.619 65.7329 133.619 104.301C133.619 143.117 109.732 170.239 76.1403 170.239C60.2155 170.239 47.2767 164.267 38.319 153.319V204.265C38.319 206.323 36.6503 207.992 34.5918 207.992H3.72717ZM36.3284 104.301C36.3284 124.455 48.5208 138.638 65.6897 138.638C82.6097 138.638 95.051 124.207 95.051 104.301C95.051 84.3947 82.6097 70.2117 65.6897 70.2117C48.5208 70.2117 36.3284 84.3947 36.3284 104.301Z"
+              fill="#1F1738"
+            ></path>
+          </svg>
+
+          <ul
+            class="lg:flex items-center hidden font-sans font-medium text-[16px] text-[#10242F] ml-[19px] gap-[11px]"
+          >
+            <li
+              class="text-center py-[8px] px-4 hover:bg-[#E1EDF2] rounded-[8px] transition duration-[0.3s] ease cursor-pointer"
+            >
+              <a href="website.html">Website</a>
+            </li>
+            <li
+              class="text-center py-[8px] px-4 hover:bg-[#E1EDF2] rounded-[8px] transition duration-[0.3s] ease cursor-pointer"
+            >
+              <a href="Email.html">Email</a>
+            </li>
+            <div class="relative">
+              <!-- List Item (clickable) -->
+              <li
+                id="dropdownTrigger"
+                onclick="toggleSubnav2()"
+                class="text-center flex py-[8px] px-4 pb-[10px] pl-[16px] hover:bg-[#E1EDF2] rounded-[8px] transition duration-[0.3s] ease cursor-pointer"
+              >
+                <a href="#">Online store </a>
+                <i
+                  id="arrowIcon2"
+                  class="fa-solid fa-caret-down relative text-[10px] mt-[7px] left-1"
+                ></i>
+              </li>
+
+              <!-- Sub Navigation (Dropdown) -->
+              <div
+                id="subnav2"
+                class="hidden xl:absolute left-0 w-full bg-[#10242F] text-[#E1EDF2] p-4 rounded-md xl:z-10 xl:shadow-lg xl:w-[174px] xl:top-[70px]"
+              >
+                <h2 class="text-[16px] uppercase font-bold mb-3 text-[#E1EDF2]">
+                  Products
+                </h2>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="/online-store/"
+                      class="block hover:underline font-normal text-[#E1EDF2] text-[16px]"
+                      >Online store</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/online-courses/"
+                      class="block hover:underline font-normal text-[#E1EDF2] text-[16px]"
+                      >Online courses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/digital-downloads/"
+                      class="block hover:underline font-normal text-[#E1EDF2] text-[16px]"
+                      >Digital downloads</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/webinars/"
+                      class="block hover:underline font-normal text-[#E1EDF2] text-[16px]"
+                      >Webinars</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/coaching/"
+                      class="block hover:underline font-normal text-[#E1EDF2] text-[16px]"
+                      >Coaching</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/community/"
+                      class="block hover:underline font-normal text-[#E1EDF2] text-[16px]"
+                      >Community</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <li
+              class="text-center py-[8px] px-4 hover:bg-[#E1EDF2] rounded-[8px] transition duration-[0.3s] ease cursor-pointer"
+            >
+              <a href="Switch.html">Switch to podia</a>
+            </li>
+            <li
+              class="text-center py-[10px] px-4 hover:bg-[#E1EDF2] rounded-[8px] transition duration-[0.3s] ease cursor-pointer"
+            >
+              <a href="Pricing.html">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="navbar2 flex relative gap-[1.8rem] md:gap-[1.6rem] right-[1.9rem]"
+        >
+          <button
+            class="text-[#1F1738] hidden md:block font-sans text-base font-medium hover:underline cursor-pointer"
+          >
+            <a href="Login.html" id="Loginbtn"> Login </a>
+          </button>
+
+          <div class="flex items-center justify-center">
+            <a
+              href="Signup.html"
+              class="relative group bg-[#1F1738] text-[#E1EDF2] text-center py-[8px] px-[16px] rounded-[8px] hover:bg-[#E1EDF2] hover:text-[#10242F] transition duration-[0.4s] ease cursor-pointer"
+            >
+              <span class="relative z-10 font-normal xl:font-medium text-[15px]"
+                >Sign up free</span
+              >
+              <span
+                class="absolute left-0 top-0 h-full w-0 bg-[#E1EDF2] rounded-[8px] transition-all duration-500 ease-in-out group-hover:w-full z-0"
+              ></span>
+            </a>
+          </div>
+
+          <i
+            class="fa-solid fa-bars inline-block text-[19px] md:text-[21px] mt-[11px] md:mt-[10px] lg:hidden"
+            id="hamburger"
+          ></i>
+          <i
+            class="fa-solid fa-xmark text-[24px] mt-2 md:mt-2.5 active"
+            id="close-icon1"
+          ></i>
+        </div>
+      </header>
+    </div>
+
+    <div class="main" data-scroll-Container>
+      <section
+        class="hero-section relative flex items-center justify-center w-full mt-[-1px] pt-[136px] px-6 md:pt-[158px] h-[550px] lg:pt-[120px] lg:pb-20 lg:px-8 xl:pt-[140px] 2xl:pt-[208px] 2xl:px-20 2xl:pb-[233px] 3xl:pt-[180px] 3xl:pb-[238px] 4xl:pb-[278px] md:h-[700px] lg:h-[643px] xl:h-[701px] 2xl:h-[736px] 3xl:h-[797px] 4xl:h-[887px] overflow-hidden bg-[#A5C8D8]"
+      >
+        <div
+          class="hero-main-conatiner container grid grid-cols-1 gap-0 lg:grid-cols-12 2xl:max-w-[107rem] mx-auto"
+        >
+          <div
+            class="section-heading flex items-center justify-center lg:items-start lg:justify-start xl:justify-center flex-col gap-[0.8rem] lg:gap-4 2xl:gap-[1.3rem] text-center lg:col-span-5 xl:col-span-4 md:pt-36 lg:pt-0 lg:pl-12 xl:pb-12 2xl:pb-0 2xl:pt-0 2xl:pl-0 3xl:pl-0 3xl:pb-0 4xl:pt-0"
+          >
+            <div
+              class="text-header w-[327px] md:w-[450px] lg:w-[335px] xl:w-[500px] 3xl:w-[598px]"
+            >
+              <h1
+                class="animate-text-hero text-[32px] md:text-[40px] lg:text-[48px] xl:text-[52px] 2xl:text-[56px] font-medium text-[#1F1738] leading-[34px] md:leading-[45px] lg:leading-[52px] 2xl:leading-[58px] text-center lg:text-left tracking-[-1.3px] opacity-0 transfromn translate-y-[50px]"
+              >
+                An online store that makes selling easy
+              </h1>
+            </div>
+
+            <div
+              class="text-body w-[296px] md:w-[460px] lg:w-[330px] xl:w-[366px] 3xl:w-[556px]"
+            >
+              <p
+                class="animate-text-hero text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] text-center lg:text-left font-normal opacity-0 transfromn translate-y-[50px]"
+              >
+                Sell anything from your Podia store. Upload your content and
+                leave the hosting, checkout, and delivery to us.
+              </p>
+            </div>
+
+            <div class="hero-btn lg:mt-4">
+              <button
+                class="animate-text-hero relative bg-[#1F1738] py-2 px-4 md:py-[13px] lg:px-5 group rounded-[10px] 3xl:rounded-[12px] text-[#E1EDF2] hover:text-black transition-all duration-300 ease cursor-pointer opacity-0 transfromn translate-y-[50px]"
+              >
+                <span
+                  class="relative z-10 text-[16px] md:text-[18px] lg:text-[20px] font-bold"
+                >
+                  Get your free online store</span
+                >
+                <span
+                  class="absolute left-0 top-0 h-full w-0 bg-[#E1EDF2] rounded-[10px] 3xl:rounded-[12px] transition-all duration-500 ease-in-out group-hover:w-full z-0"
+                ></span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="lottie-container2"
+            class="relative top-4 md:-top-9 2xl:-top-2 3xl:top-4 4xl:top-12 2xl:-right-20 flex items-center lg:items-start justify-center aspect-[753/488] w-full lg:max-w-[688px] xl:max-w-[894px] lg:aspect-[688/409] h-auto 2xl:aspect-[753/448] 2xl:max-w-[1200px] 3xl:aspect-[853/488] 3xl:max-w-[1300px] 4xl:aspect-[992/590px] 4xl:max-w-[1400px] lg:mx-auto lg:col-span-7 xl:col-span-8 xl:pl-32 2xl:pl-0"
+          ></div>
+        </div>
+      </section>
+
+      <svg
+        class="block w-full h-[50px] md:h-[64px] lg:h-[100px] 2xl:h-[120px] top-[500px] md:top-[636px] lg:top-[542.5px] xl:top-[600px] 2xl:top-[615px] 3xl:top-[676px] 4xl:top-[766px] absolute"
+        viewBox="0 0 1440 100"
+        preserveAspectRatio="none"
+      >
+        <path d="M0,100 C480,0 960,0 1440,100" fill="white" />
+      </svg>
+
+      <section
+        class="multi-card flex items-center justify-center w-full h-full px-6 pt-8 md:pt-20 md:pb-8 lg:pt-36 lg:px-20 xl:pt-24 2xl:pt-12 4xl:pt-40"
+      >
+        <div
+          class="multi-card-content text-center container mx-auto 2xl:max-w-[107rem]"
+        >
+          <div
+            class="flex flex-col items-center justify-center w-full h-full mb-16 lg:mb-28 mx-auto"
+          >
+            <div class="text-header w-[330px] md:w-full mb-6">
+              <h2
+                class="text-[26px] md:text-[30px] lg:text-[40px] font-medium leading-8 lg:word-tight"
+              >
+                Sell anything <br class="md:hidden" />
+                you can imagine
+              </h2>
+            </div>
+
+            <div
+              class="text-body w-[327px] md:w-[384px] lg:w-[682px] 3xl:w-full 3xl:max-w-[1044px]"
+            >
+              <p
+                class="text-[16px] lg:text-[22px] text-[#06040E] text-center font-normal"
+              >
+                Podia gives you the flexibility to sell any digital product you
+                want. Podia hosts everything and handles things like access
+                management to ensure that only customers who pay can get your
+                products.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="animate-section grid grid-cols-1 gap-y-8 md:grid-cols-2 xl:grid-cols-4 md:gap-4"
+          >
+            <div
+              class="card-1 animate-card flex flex-col items-center justify-start p-6 bg-[#E1EDF2] rounded-[15px] md:rounded-[25px] lg:rounded-[30px] opacity-0 transfrom translate-y-[-50px]"
+            >
+              <div class="card-content">
+                <div
+                  class="card__icon h-[76px] w-[77px] bg-[#10242E] rounded-[8px] p-3.5 mt-1 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    fill="#E1EDF2"
+                  >
+                    <path
+                      d="M220.49,190.83a12,12,0,0,1,0,17L207.8,220.49a12,12,0,0,1-17,0l-56.56-56.57L115,214.09c0,.1-.08.21-.13.32a15.83,15.83,0,0,1-14.6,9.59l-.79,0a15.83,15.83,0,0,1-14.41-11L32.8,52.92A16,16,0,0,1,52.92,32.8L213,85.07a16,16,0,0,1,1.41,29.8l-.32.13-50.17,19.27ZM96,32a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0v8A8,8,0,0,0,96,32ZM16,104h8a8,8,0,0,0,0-16H16a8,8,0,0,0,0,16ZM124.42,39.16a8,8,0,0,0,10.74-3.58l8-16a8,8,0,0,0-14.31-7.16l-8,16A8,8,0,0,0,124.42,39.16Zm-96,81.69-16,8a8,8,0,0,0,7.16,14.31l16-8a8,8,0,1,0-7.16-14.31Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="text-header mb-4">
+                  <p
+                    class="card__title-text text-[20px] font-medium text-left text-[#06040E] group cursor-pointer"
+                  >
+                    <span
+                      class="bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:98%_2px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                    >
+                      Beautiful online courses you can build in minutes
+                      <i class="fa-solid fa-caret-right text-[18px]"></i>
+                    </span>
+                  </p>
+                </div>
+
+                <div class="text-body">
+                  <p class="text-[16px] text-[#06040E] font-normal text-left">
+                    Add videos, files, lessons, and organize your course however
+                    you like. Podia hosts your content and manages the payments
+                    from your customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-2 animate-card flex flex-col items-center justify-start p-6 rounded-[15px] md:rounded-[25px] lg:rounded-[30px] bg-[#E1EDF2] opacity-0 transfrom translate-y-[-50px]"
+            >
+              <div class="card-content">
+                <div
+                  class="card__icon h-[76px] w-[77px] bg-[#10242E] rounded-[8px] p-3.5 mt-1 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    fill="#E1EDF2"
+                  >
+                    <path
+                      d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM152,160H136v16a8,8,0,0,1-16,0V160H104a8,8,0,0,1,0-16h16V128a8,8,0,0,1,16,0v16h16a8,8,0,0,1,0,16Zm0-72V43.31L196.69,88Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="text-header mb-4">
+                  <p
+                    class="card__title-text link text-[20px] font-sans font-semibold text-[#06040E] text-left group cursor-pointer"
+                  >
+                    <span
+                      class="bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:98%_2px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                    >
+                      Ebooks, templates, and any file type you can think of
+
+                      <i class="fa-solid fa-caret-right text-[18px]"></i>
+                    </span>
+                  </p>
+                </div>
+
+                <div class="text-body">
+                  <p
+                    class="text-[16px] text-[#06040E] font-sans font-semibold text-left"
+                  >
+                    Have an ebook to sell? Templates you love? Podia makes it
+                    easy to spin up a sales page and sell ebooks, templates,
+                    audio files, video files, spreadsheets, and any other file
+                    type.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-3 animate-card flex flex-col items-center justify-start p-6 bg-[#E1EDF2] rounded-[15px] md:rounded-[25px] lg:rounded-[30px] opacity-0 transfrom translate-y-[-50px]"
+            >
+              <div class="card-content">
+                <div
+                  class="card__icon h-[76px] w-[77px] bg-[#10242E] rounded-[8px] p-3.5 mt-1 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    fill="#E1EDF2"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V184a16,16,0,0,0,16,16h60.43l13.68,23.94a16,16,0,0,0,27.78,0L155.57,200H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM84,132a12,12,0,1,1,12-12A12,12,0,0,1,84,132Zm44,0a12,12,0,1,1,12-12A12,12,0,0,1,128,132Zm44,0a12,12,0,1,1,12-12A12,12,0,0,1,172,132Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="text-header mb-4">
+                  <p
+                    class="card__title-text text-[20px] font-sans font-medium text-left text-[#06040E] group cursor-pointer"
+                  >
+                    <span
+                      class="bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:98%_2px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                    >
+                      One-on-one coaching and consultations, sold and scheduled
+                      from your site
+
+                      <i class="fa-solid fa-caret-right text-[18px]"></i>
+                    </span>
+                  </p>
+                </div>
+
+                <div class="text-body">
+                  <p
+                    class="text-[16px] text-[#06040E] font-sans font-semibold text-left"
+                  >
+                    Sell one-on-one access to your time and attention. Podia
+                    makes it easy for you to charge for coaching sessions and
+                    consultations.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-4 animate-card flex flex-col items-center justify-start p-6 bg-[#E1EDF2] rounded-[15px] md:rounded-[25px] lg:rounded-[30px] opacity-0 transfrom translate-y-[-50px]"
+            >
+              <div class="card-content">
+                <div
+                  class="card__icon h-[76px] w-[77px] bg-[#10242E] rounded-[8px] p-3.5 mt-1 mb-4"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    fill="#E1EDF2"
+                  >
+                    <path
+                      d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div class="text-header mb-4">
+                  <p
+                    class="card__title-text text-[20px] font-sans font-medium text-left text-[#06040E] group cursor-pointer"
+                  >
+                    <span
+                      class="bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:98%_2px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                    >
+                      Webinars and workshops with registration and payment in
+                      one place
+
+                      <i class="fa-solid fa-caret-right text-[18px]"></i>
+                    </span>
+                  </p>
+                </div>
+
+                <div class="text-body">
+                  <p
+                    class="text-[16px] text-[#06040E] font-sans font-semibold text-left"
+                  >
+                    Run webinars directly from your website. Set up a paid
+                    webinar and your customers can register straight from your
+                    Podia store.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="features flex items-center justify-center w-full h-full pt-36 px-6 lg:px-20 xl:pt-56"
+      >
+        <div
+          class="features-content grid grid-cols-1 container 2xl:max-w-[107rem] mx-auto"
+        >
+          <div
+            class="section-header-heading flex flex-col items-center justify-center text-center mb-12 md:mb-16 lg:mb-20"
+          >
+            <div
+              class="text-header w-[258px] md:w-[418px] lg:w-[526px] 4xl:w-full mb-5 md:mb-6"
+            >
+              <h2
+                class="text-[26px] md:text-[30px] lg:text-[40px] text-[#06040E] font-medium leading-[30px] lg:leading-[42px] lg:tracking-[-1px]"
+              >
+                Take customers from “need it” to “got it” in just a few seconds
+              </h2>
+            </div>
+
+            <div class="text-body w-[327px] md:w-[528px] lg:w-[644px]">
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[22px] text-[#06040E] font-normal"
+              >
+                Podia’s high-converting checkout gives you revenue-boosting
+                features that increase the value of every sale and every
+                customer.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="picture-frame animate-feature-frame flex items-center justify-center opacity-0 transform translate-y-[-50px]"
+          >
+            <img
+              class="rounded-[20px]"
+              src="image/online-store-checkout.svg"
+              alt="online-store-checkout"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="online-store-feature-items-container flex flex-col items-center justify-content pt-20 px-6 lg:px-20 lg:pt-28 xl:pt-36 3xl:pt-32"
+      >
+        <div
+          class="online-store-feature-items container mx-auto 2xl:max-w-[107rem]"
+        >
+          <ul
+            class="online-store-feature-items-list animate-store-feature-items-section grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-x-10 lg:gap-y-12"
+          >
+            <li
+              class="online-store-feature-items-list-item animate-store-feature-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#F5F5F5] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div class="text-content w-full">
+                  <div
+                    class="list-title flex items-center w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#1F1738] font-bold lg:font-medium"
+                    >
+                      Coupons
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal"
+                    >
+                      Set up basic discounts or create customized coupons with
+                      usage limits and expiration dates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="online-store-feature-items-list-item animate-store-feature-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#F5F5F5] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-bold lg:font-medium"
+                    >
+                      Currency
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[258px] md:max-w-[648px] lg:max-w-[343.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      With customers in 167 countries, Podia supports businesses
+                      all over the world. Take payment in more than 20 global
+                      currencies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="online-store-feature-items-list-item animate-store-feature-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#F5F5F5] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-bold lg:font-medium"
+                    >
+                      Payment gateways
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      Your customers can pay with Stripe, PayPal, Google Pay,
+                      Apple Pay, iDeal, SEPA Debit, Stripe Link, and other
+                      popular payment processors.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="online-store-feature-items-list-item animate-store-feature-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#F5F5F5] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-bold lg:font-medium"
+                    >
+                      Payment plans
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      Increase conversions by letting customers pay in
+                      installments over time. Podia handles the recurring
+                      charges for you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="online-store-feature-items-list-item animate-store-feature-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#F5F5F5] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-bold lg:font-medium"
+                    >
+                      Upsells
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      Offer additional products and services during the checkout
+                      flow, at the exact moment your customer is ready to buy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="online-store-feature-items-list-item animate-store-feature-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#F5F5F5] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-bold lg:font-medium"
+                    >
+                      Tax collection
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      Make tax time less stressful with Podia’s global tax
+                      support. Collect taxes from 230 tax jurisdictions across
+                      all payment methods.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="online-store-feature-items-list-item animate-store-feature-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#F5F5F5] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-bold lg:font-medium"
+                    >
+                      Discussion forums
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      Add built-in discussion forums to any product you make.
+                      You decide who can post and how students get notified.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="online-store-feature-items-list-item animate-store-feature-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#F5F5F5] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-bold lg:font-medium"
+                    >
+                      Product bundles
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      Bundle products together, or give customers access to
+                      additional products when they make a purchase in your
+                      online store.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="online-store-feature-items-list-item animate-store-feature-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#F5F5F5] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-bold lg:font-medium"
+                    >
+                      Waitlists
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      Set up a product waitlist to collect email addresses while
+                      you build, then let people know when launch day arrives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="svg relative top-[0.1rem] md:z-10">
+        <svg
+          class="block w-full inset-0 h-auto"
+          viewBox="0 0 1440 160"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,160 C480,20 960,20 1440,160" fill="#E1EDF2"></path>
+        </svg>
+      </div>
+
+      <section
+        class="qoute-section animate-qoute-section relative w-full bg-[#E1EDF2] pt-[65.5px] pr-6 pb-0 pl-6"
+      >
+        <div
+          class="qoute-section-content container grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-[5.3rem] xl:gap-[0.4rem] mx-auto 3xl:max-w-[107rem]"
+        >
+          <!-- Text Content -->
+
+          <div
+            class="qoute-header z-10 lg:col-span-5 xl:col-span-6 3xl:col-span-5 lg:order-2 lg:flex lg:flex-col lg:items-start lg:justify-start xl:justify-center"
+          >
+            <div
+              class="text-header w-[266px] md:w-[522px] lg:w-[358px] xl:w-[620.5px] 4xl:w-[770px]"
+            >
+              <p
+                class="animate-qoute text-[26px] lg:text-[30px] xl:text-[40px] text-[#1F1738] font-medium leading-[30px] md:leading-[28px] tracking-[-1.3px] md:tracking-[-0.1px] lg:tracking-[-0.3px] xl:tracking-[-0.5px] lg:leading-[32px] xl:leading-[42px] text-left opacity-0 transform translate-y-[50px]"
+              >
+                "I love Podia because it has the absolute best user experience
+                for my students and customers. I get compliments on it all the
+                time! "
+              </p>
+            </div>
+
+            <div
+              class="text-body w-[320px] md:w-[536px] lg:w-[342.41px] xl:w-[486.91px] 4xl:w-[700px]"
+            >
+              <p
+                class="animate-qoute mt-6 text-[16px] md:text-[18px] lg:text-[22px] text-[#1F1738] font-normal lg:font-medium opacity-0 transform translate-y-[50px]"
+              >
+                More than 150,000 entrepreneurs — including creators, coaches,
+                consultants, and many more — grow their business on Podia. See
+                how easy selling online can be.
+              </p>
+            </div>
+
+            <div
+              class="animate-qoute qoute-name mt-9 text-[13px] lg:text-[16px] text-[#1F1738] font-bold uppercase opacity-0 transform translate-y-[50px]"
+            >
+              Amy LeBlanc
+            </div>
+            <div
+              class="animate-qoute qoute-detail text-[13px] lg:text-[16px] text-[#1F1738] font-bold uppercase opacity-0 transform translate-y-[50px]"
+            >
+              Levee Road Studio
+            </div>
+
+            <a
+              href="example.com"
+              class="animate-qoute relative inline-block mt-8 pt-3 pr-3 pb-3 pl-4 md:p-3 lg:pt-4 lg:pr-4 lg:pb-4 lg:pl-6 text-[#E1EDF2] bg-[#1F1738] hover:text-[#10242F] transition duration-[0.4s] ease cursor-pointer rounded-[10px] xl:rounded-[14px] group opacity-0 transform translate-y-[50px]"
+            >
+              <span
+                class="relative text-[16px] md:text-[18px] lg:text-[20px] font-medium z-10"
+              >
+                Start your free trial
+
+                <i class="fa-solid fa-caret-right text-[13px] ml-2"></i>
+              </span>
+              <span
+                class="absolute left-0 top-0 h-full w-0 bg-[#E1EDF2] rounded-[10px] 3xl:rounded-[12px] transition-all duration-500 ease-in-out group-hover:w-full z-0"
+              ></span>
+            </a>
+          </div>
+
+          <!-- Image -->
+          <div
+            class="qoute-decorations animate-qoute relative md:z-10 flex items-start justify-center md:justify-start lg:justify-center xl:justify-start lg:col-span-6 3xl:col-span-7 lg:order-1 xl:-left-[1.5rem] opacity-0 transform translate-y-[50px]"
+          >
+            <img
+              src="image\amy-leblanc.avif"
+              alt="amy-leblanc-img"
+              class="object-cover h-full w-full aspect-[375/492] md:aspect-[468/614] lg:aspect-[430/582px] xl:max-w-[574px] xl:aspect-[763/1000] 2xl:aspect-[587/771] 2xl:max-w-[587px] 3xl:aspect-[664/872] 3xl:max-w-[700px]"
+            />
+          </div>
+        </div>
+        <div
+          class="quote__decoration quote__decoration absolute top-0 md:-top-20 w-full h-full"
+        >
+          <svg
+            class="quote__decoration quote__decoration--large hidden md:block absolute lg:top-8 lg:right-[-0.2rem] lg:h-[110%] transform translate-x-[5%] translate-y-[-5%]"
+            viewBox="0 0 528 953"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M440.999 589.536C447.962 585.516 451.444 583.506 451.994 580.178C452.544 576.851 449.895 573.827 444.596 567.779L403.861 521.285C400.166 517.067 398.319 514.959 395.8 514.542C393.281 514.126 390.853 515.527 385.997 518.331L353.531 537.075C348.675 539.878 346.248 541.28 345.349 543.67C344.45 546.06 345.352 548.714 347.157 554.023L367.055 612.548C369.643 620.16 370.937 623.966 374.094 625.154C377.251 626.341 380.733 624.331 387.696 620.311L440.999 589.536Z"
+              fill="var(--color-theme-10)"
+            ></path>
+
+            <path
+              class="md:hidden"
+              d="M336.471 89.4972C351.025 93.397 362.793 92.7892 371.773 87.6737C380.664 82.5344 387.076 72.6279 391.008 57.9541C394.939 43.2804 394.34 31.4953 389.209 22.5989C383.99 13.6787 374.103 7.26862 359.549 3.36878C344.906 -0.554844 333.138 0.0529866 324.247 5.19227C315.288 10.228 308.832 20.1226 304.879 34.8761C300.926 49.6296 301.559 61.4664 306.778 70.3867C311.93 79.2034 321.828 85.5735 336.471 89.4972Z"
+              fill="var(--color-theme-10)"
+            ></path>
+
+            <path
+              d="M472.704 207.384C466.638 205.193 463.605 204.097 460.828 205.548C458.05 206.998 457.164 210.304 455.392 216.916L439.699 275.483C437.959 281.979 437.088 285.228 438.566 287.786C440.043 290.345 443.291 291.216 449.787 292.956L508.355 308.649C514.967 310.421 518.273 311.307 520.918 309.626C523.563 307.945 524.13 304.771 525.263 298.423C529.392 275.298 527.094 256.267 518.37 241.33C509.773 226.592 494.551 215.277 472.704 207.384Z"
+              fill="var(--color-theme-40)"
+            ></path>
+            <path
+              d="M305.175 197.233C297.409 195.153 293.527 194.112 289.834 195.102C286.142 196.091 283.299 198.933 277.614 204.618L264.342 217.89C258.657 223.575 255.815 226.418 254.825 230.11C253.836 233.803 254.876 237.686 256.957 245.451L261.815 263.581C263.896 271.347 264.936 275.23 267.64 277.933C270.343 280.636 274.225 281.676 281.991 283.757L300.121 288.615C307.887 290.696 311.77 291.736 315.462 290.747C319.155 289.757 321.997 286.915 327.682 281.23L340.954 267.958C346.639 262.273 349.481 259.431 350.471 255.738C351.46 252.046 350.42 248.163 348.339 240.397L343.481 222.267C341.4 214.502 340.36 210.619 337.657 207.916C334.954 205.213 331.071 204.172 323.305 202.091L305.175 197.233Z"
+              fill="white"
+            ></path>
+            <path
+              class="hidden lg:block"
+              d="M51.0502 858.849C43.2844 856.768 39.4015 855.728 35.709 856.717C32.0166 857.707 29.1741 860.549 23.4891 866.234L10.2173 879.506C4.53235 885.191 1.68987 888.033 0.700472 891.726C-0.288926 895.418 0.751492 899.301 2.83233 907.067L7.69016 925.197C9.77099 932.963 10.8114 936.845 13.5145 939.549C16.2176 942.252 20.1005 943.292 27.8663 945.373L45.9959 950.231C53.7617 952.312 57.6446 953.352 61.3371 952.363C65.0296 951.373 67.8721 948.531 73.557 942.846L86.8289 929.574C92.5138 923.889 95.3563 921.046 96.3457 917.354C97.3351 913.662 96.2947 909.779 94.2138 902.013L89.356 883.883C87.2752 876.117 86.2347 872.235 83.5317 869.531C80.8286 866.828 76.9457 865.788 69.1799 863.707L51.0502 858.849Z"
+              fill="var(--color-theme-40)"
+            ></path>
+          </svg>
+          <svg
+            class="quote__decoration quote__decoration--small absolute w-[110%] bottom-0 -left-4 translateX(-5%) translateY(10%) md:hidden"
+            viewBox="0 0 505 552"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M440.371 328.554C456.694 332.927 469.891 332.246 479.962 326.508C489.933 320.745 497.124 309.635 501.534 293.178C505.943 276.722 505.271 263.505 499.517 253.527C493.664 243.523 482.576 236.335 466.253 231.961C449.831 227.561 436.634 228.242 426.662 234.006C416.615 239.654 409.374 250.75 404.941 267.296C400.507 283.842 401.217 297.117 407.071 307.121C412.849 317.009 423.949 324.153 440.371 328.554Z"
+              fill="var(--color-theme-10)"
+            ></path>
+            <path
+              d="M57.2077 3.79324C48.4984 1.45959 44.1438 0.292764 40.0027 1.40237C35.8616 2.51197 32.6737 5.6998 26.2981 12.0754L11.4138 26.9598C5.03815 33.3354 1.85032 36.5232 0.740718 40.6643C-0.368888 44.8054 0.797937 49.1601 3.13159 57.8694L8.57962 78.2017C10.9133 86.911 12.0801 91.2657 15.1116 94.2972C18.1431 97.3287 22.4977 98.4955 31.207 100.829L51.5394 106.277C60.2487 108.611 64.6033 109.778 68.7444 108.668C72.8855 107.558 76.0733 104.371 82.449 97.9949L97.3333 83.1106C103.709 76.735 106.897 73.5472 108.006 69.4061C109.116 65.265 107.949 60.9103 105.616 52.201L100.167 31.8687C97.8338 23.1594 96.667 18.8047 93.6355 15.7732C90.604 12.7417 86.2494 11.5749 77.5401 9.24127L57.2077 3.79324Z"
+              fill="var(--color-theme-40)"
+            ></path>
+            <path
+              d="M152.442 543.97C159.72 549.293 163.359 551.955 167.022 551.013C170.685 550.07 172.588 545.983 176.393 537.808L205.649 474.958C208.303 469.257 209.629 466.407 208.916 463.634C208.203 460.86 205.665 459.004 200.59 455.292L166.656 430.471C161.58 426.758 159.043 424.902 156.184 425.062C153.325 425.222 151.01 427.35 146.381 431.606L95.3454 478.525C88.7072 484.628 85.3881 487.679 85.5995 491.456C85.811 495.232 89.45 497.894 96.728 503.218L152.442 543.97Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <section
+        class="gallery-section flex flex-col items-center justify-center pt-20 pr-6 pb-20 pl-6 md:pt-24 md:pr-6 md:pb-24 md:pl-6 lg:pr-20 lg:pt-32 lg:pb-[15rem] lg:pl-20 bg-[#E1EDF2]"
+      >
+        <div
+          class="gallery-section-content container w-full overflow-hidden relative 3xl:max-w-[107rem] mx-auto"
+        >
+          <div
+            class="gallery-section-headline flex flex-col items-center justify-center mb-20 lg:mb-8 xl:mb-20"
+          >
+            <div
+              class="text-header w-[290px] md:w-[358px] lg:w-[404px] xl:w-[520px] 3xl:w-full mb-4"
+            >
+              <h2
+                class="text-[26px] md:text-[30px] lg:text-[36px] xl:text-[40px] text-center text-[#1F1738] font-medium leading-[30px] md:leading-[35px] lg:leading-[40px] tracking-[-1px]"
+              >
+                Beautiful sales pages that turn visitors into buyers
+              </h2>
+            </div>
+            <div class="text-body w-[270px] md:w-[620px] xl:w-[684px]">
+              <p
+                class="text-[16px] md:text-[20px] lg:text-[20px] xl:text-[22px] text-center text-[#1F1738] font-normal md:font-medium"
+              >
+                Podia sales pages make your products and services look amazing.
+                Here’s what entrepreneurs like you are selling on Podia today.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="animate-gallery-groups xl:items-start xl:justify-center lg:grid lg:grid-cols-2 lg:gap-4 w-full"
+          >
+            <div
+              class="animate-groups grid grid-cols-2 gap-4 lg:grid-cols-2 lg:gap-5 xl:overflow-hidden mx-auto relative"
+            >
+              <div
+                class="item-1 animate-gallery-items group flex items-start justify-center overflow-hidden xl:rounded-[20px] opacity-0 transform translate-y-[50px]"
+              >
+                <div
+                  class="frame relative flex items-start justify-center cursor-pointer overflow-hidden w-full h-auto aspect-[311/389] md:aspect-[176/230] lg:aspect-[801/1005] xl:aspect-[1143/1424] 3xl:aspect-[344/430]"
+                >
+                  <img
+                    src="image/gallery-cart1-img.avif"
+                    class="rounded-[19px] w-full h-full object-cover"
+                    alt="card-1"
+                    loading="lazy"
+                  />
+                  <div
+                    class="info xl:hidden absolute bottom-2 right-2 flex items-center justify-center rounded-[12px] w-[48px] h-[48px] bg-[#06040E] text-[#ffffff]"
+                  >
+                    <a href="example.com">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="none"
+                      >
+                        <path
+                          fill="#EFEFF0"
+                          d="M14.25 6.5a.75.75 0 1 1-1.5 0V4.312l-3.72 3.72a.751.751 0 1 1-1.062-1.063l3.72-3.719H9.5a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75v4ZM11.5 8a.75.75 0 0 0-.75.75v4h-7.5v-7.5h4a.75.75 0 0 0 0-1.5H3A1.25 1.25 0 0 0 1.75 5v8A1.25 1.25 0 0 0 3 14.25h8A1.25 1.25 0 0 0 12.25 13V8.75A.75.75 0 0 0 11.5 8Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div
+                    class="view-site hidden xl:block absolute top-[16.3rem] w-full h-56 rounded-tl-[9999px] rounded-tr-[9999px] translate-y-[400%] group-hover:translate-y-0 transition-transform duration-300 bg-[#ffffff]"
+                  >
+                    <div
+                      class="content flex items-center text-center justify-center p-12"
+                    >
+                      <a
+                        href="example.com"
+                        class="text-[25px] text-center font-medium text-[#06040E]"
+                      >
+                        View Site
+                        <i
+                          class="fa-solid fa-caret-right relative text-center text-[10px] -top-[0.2rem]"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item-2 relative group animate-gallery-items flex items-start justify-center overflow-hidden xl:rounded-[19px] opacity-0 transform translate-y-[50px]"
+              >
+                <div
+                  class="frame relative flex items-start justify-center overflow-hidden w-full h-auto aspect-[1] md:aspect-[352/360] lg:aspect-[5695/5600] xl:aspect-[811/800] 3xl:aspect-[344/346] cursor-pointer xl:rounded-[19px]"
+                >
+                  <img
+                    src="image/gallery-cart2-img.avif"
+                    class="rounded-t-[19px] rounded-b-[8px] xl:rounded-[19px] w-full h-full object-cover"
+                    alt="card-1"
+                    loading="lazy"
+                  />
+                  <div
+                    class="info xl:hidden absolute bottom-2 right-2 flex items-center justify-center rounded-[12px] w-[48px] h-[48px] bg-[#06040E] text-[#ffffff]"
+                  >
+                    <a href="example.com">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="none"
+                      >
+                        <path
+                          fill="#EFEFF0"
+                          d="M14.25 6.5a.75.75 0 1 1-1.5 0V4.312l-3.72 3.72a.751.751 0 1 1-1.062-1.063l3.72-3.719H9.5a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75v4ZM11.5 8a.75.75 0 0 0-.75.75v4h-7.5v-7.5h4a.75.75 0 0 0 0-1.5H3A1.25 1.25 0 0 0 1.75 5v8A1.25 1.25 0 0 0 3 14.25h8A1.25 1.25 0 0 0 12.25 13V8.75A.75.75 0 0 0 11.5 8Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="view-site hidden xl:block absolute top-[12.1rem] w-full h-56 rounded-t-full translate-y-[400%] group-hover:translate-y-0 transition-transform duration-300 bg-[#ffffff]"
+                  >
+                    <div
+                      class="content flex items-center text-center justify-center p-12"
+                    >
+                      <a
+                        href="example.com"
+                        class="text-[25px] text-center font-medium text-[#06040E]"
+                      >
+                        View Site
+                        <i
+                          class="fa-solid fa-caret-right relative text-center text-[10px] -top-[0.2rem]"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item-3 group animate-gallery-items flex items-start justify-center xl:rounded-[20px] overflow-hidden opacity-0 transform translate-y-[50px]"
+              >
+                <div
+                  class="frame relative flex items-start justify-center overflow-hidden w-full h-auto aspect-[311/312] md:aspect-[352/410] lg:aspect-[5695/5600] xl:aspect-[811/800] 3xl:aspect-[344/346] xl:rounded-[19px] cursor-pointer"
+                >
+                  <img
+                    src="image/gallery-cart3-img.avif"
+                    class="rounded-t-[19px] rounded-b-[8px] xl:rounded-[19px] w-full h-full object-cover"
+                    alt="card-1"
+                    loading="lazy"
+                  />
+                  <div
+                    class="info xl:hidden absolute bottom-2 right-2 flex items-center justify-center rounded-[12px] w-[48px] h-[48px] bg-[#06040E] text-[#ffffff]"
+                  >
+                    <a href="example.com">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="none"
+                      >
+                        <path
+                          fill="#EFEFF0"
+                          d="M14.25 6.5a.75.75 0 1 1-1.5 0V4.312l-3.72 3.72a.751.751 0 1 1-1.062-1.063l3.72-3.719H9.5a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75v4ZM11.5 8a.75.75 0 0 0-.75.75v4h-7.5v-7.5h4a.75.75 0 0 0 0-1.5H3A1.25 1.25 0 0 0 1.75 5v8A1.25 1.25 0 0 0 3 14.25h8A1.25 1.25 0 0 0 12.25 13V8.75A.75.75 0 0 0 11.5 8Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="view-site hidden xl:block absolute top-44 w-full h-56 rounded-t-full translate-y-[400%] group-hover:translate-y-0 transition-transform duration-300 bg-[#ffffff]"
+                  >
+                    <div
+                      class="content flex items-center text-center justify-center p-12"
+                    >
+                      <a
+                        href="example.com"
+                        class="text-[25px] text-center font-medium text-[#06040E]"
+                      >
+                        View Site
+                        <i
+                          class="fa-solid fa-caret-right relative text-center text-[10px] -top-[0.2rem]"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item-4 relative group animate-gallery-items flex items-start justify-center xl:rounded-[20px] overflow-hidden -mt-[2.4rem] md:-mt-[6.4rem] lg:-mt-[3.5rem] xl:-mt-[4.5rem] 3xl:-mt-[5.5rem] opacity-0 transform translate-y-[50px]"
+              >
+                <div
+                  class="frame relative xl:absolute flex items-start justify-center 3xl:items-start aspect-[311/389] md:aspect-[11/16] lg:aspect-[801/1005] xl:aspect-[317/392] 3xl:aspect-[344/430] overflow-hidden w-full h-auto cursor-pointer"
+                >
+                  <img
+                    src="image/gallery-cart4-img.avif"
+                    class="rounded-[19px] xl:rounded-[19px] w-full h-full object-cover"
+                    alt="card-1"
+                    loading="lazy"
+                  />
+                  <div
+                    class="info xl:hidden absolute bottom-2 right-2 flex items-center justify-center rounded-[12px] w-[48px] h-[48px] bg-[#06040E] text-[#ffffff]"
+                  >
+                    <a href="example.com">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="none"
+                      >
+                        <path
+                          fill="#EFEFF0"
+                          d="M14.25 6.5a.75.75 0 1 1-1.5 0V4.312l-3.72 3.72a.751.751 0 1 1-1.062-1.063l3.72-3.719H9.5a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75v4ZM11.5 8a.75.75 0 0 0-.75.75v4h-7.5v-7.5h4a.75.75 0 0 0 0-1.5H3A1.25 1.25 0 0 0 1.75 5v8A1.25 1.25 0 0 0 3 14.25h8A1.25 1.25 0 0 0 12.25 13V8.75A.75.75 0 0 0 11.5 8Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="view-site hidden xl:block absolute top-[16.2rem] w-full h-56 rounded-t-full translate-y-[400%] group-hover:translate-y-0 transition-transform duration-300 bg-[#ffffff]"
+                  >
+                    <div
+                      class="content flex items-center text-center justify-center p-12"
+                    >
+                      <a
+                        href="example.com"
+                        class="text-[25px] text-center font-medium text-[#06040E]"
+                      >
+                        View Site
+                        <i
+                          class="fa-solid fa-caret-right relative text-center text-[10px] -top-[0.2rem]"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="animate-groups grid grid-cols-2 gap-4 pt-4 lg:pt-0 lg:grid-cols-2 lg:gap-5 xl:overflow-hidden mx-auto relative"
+            >
+              <div
+                class="item-1 group animate-gallery-items flex items-end lg:items-start justify-center overflow-hidden xl:rounded-[20px] opacity-0 transform translate-y-[50px]"
+              >
+                <div
+                  class="frame relative flex items-end lg:items-start justify-center aspect-[311/389] md:aspect-[4/5] lg:aspect-[801/1005] xl:aspect-[1143/1424] 3xl:aspect-[344/430] overflow-hidden h-auto w-auto cursor-pointer"
+                >
+                  <img
+                    src="image/gallery-cart5-img.avif"
+                    class="rounded-[19px] w-full h-full object-cover"
+                    alt="card-1"
+                    loading="lazy"
+                  />
+                  <div
+                    class="info xl:hidden absolute bottom-2 right-2 flex items-center justify-center rounded-[12px] w-[48px] h-[48px] bg-[#06040E] text-[#ffffff]"
+                  >
+                    <a href="example.com">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="none"
+                      >
+                        <path
+                          fill="#EFEFF0"
+                          d="M14.25 6.5a.75.75 0 1 1-1.5 0V4.312l-3.72 3.72a.751.751 0 1 1-1.062-1.063l3.72-3.719H9.5a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75v4ZM11.5 8a.75.75 0 0 0-.75.75v4h-7.5v-7.5h4a.75.75 0 0 0 0-1.5H3A1.25 1.25 0 0 0 1.75 5v8A1.25 1.25 0 0 0 3 14.25h8A1.25 1.25 0 0 0 12.25 13V8.75A.75.75 0 0 0 11.5 8Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="view-site hidden xl:block absolute top-[16.2rem] w-full h-56 rounded-t-full translate-y-[400%] group-hover:translate-y-0 transition-transform duration-300 bg-[#ffffff]"
+                  >
+                    <div
+                      class="content flex items-center text-center justify-center p-12"
+                    >
+                      <a
+                        href="example.com"
+                        class="text-[25px] text-center font-medium text-[#06040E]"
+                      >
+                        View Site
+                        <i
+                          class="fa-solid fa-caret-right relative text-center text-[10px] -top-[0.2rem]"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item-2 relative group animate-gallery-items flex items-start lg-only:items-end justify-center overflow-hidden xl:rounded-[19px] opacity-0 transform translate-y-[50px]"
+              >
+                <div
+                  class="frame relative flex items-start lg-only:items-end xl:items-end justify-center aspect-square md:aspect-[44/45] lg:aspect-[5695/5600] xl:aspect-[811/800] 3xl:aspect-[344/346] overflow-hidden h-auto w-auto xl:rounded-[19px] cursor-pointer"
+                >
+                  <img
+                    src="image/gallery-cart6-img.avif"
+                    class="rounded-t-[19px] rounded-b-[8px] xl:rounded-[19px] w-full h-full object-cover"
+                    alt="card-1"
+                    loading="lazy"
+                  />
+                  <div
+                    class="info xl:hidden absolute bottom-2 right-2 flex items-center justify-center rounded-[12px] w-[48px] h-[48px] bg-[#06040E] text-[#ffffff]"
+                  >
+                    <a href="example.com">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="none"
+                      >
+                        <path
+                          fill="#EFEFF0"
+                          d="M14.25 6.5a.75.75 0 1 1-1.5 0V4.312l-3.72 3.72a.751.751 0 1 1-1.062-1.063l3.72-3.719H9.5a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75v4ZM11.5 8a.75.75 0 0 0-.75.75v4h-7.5v-7.5h4a.75.75 0 0 0 0-1.5H3A1.25 1.25 0 0 0 1.75 5v8A1.25 1.25 0 0 0 3 14.25h8A1.25 1.25 0 0 0 12.25 13V8.75A.75.75 0 0 0 11.5 8Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div
+                    class="view-site hidden xl:block absolute top-[12.1rem] w-full h-56 rounded-t-full translate-y-[400%] group-hover:translate-y-0 transition-transform duration-300 bg-[#ffffff]"
+                  >
+                    <div
+                      class="content flex items-center text-center justify-center p-12"
+                    >
+                      <a
+                        href="example.com"
+                        class="text-[25px] text-center font-medium text-[#06040E]"
+                      >
+                        View Site
+                        <i
+                          class="fa-solid fa-caret-right relative text-center text-[10px] -top-[0.2rem]"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item-3 group animate-gallery-items flex items-end lg:items-start xl:items-end 3xl:items-start justify-center overflow-hidden xl:rounded-[20px] opacity-0 transform translate-y-[50px]"
+              >
+                <div
+                  class="frame relative flex items-end lg:items-start xl:items-end 2xl:items-start justify-center aspect-square md:aspect-[22/25] lg:aspect-[5695/5600] xl:aspect-[811/800] 3xl:aspect-[344/346] h-auto w-auto overflow-hidden xl:rounded-[19px] cursor-pointer"
+                >
+                  <img
+                    src="image/gallery-cart7-img.avif"
+                    class="rounded-t-[19px] rounded-b-[8px] xl:rounded-[19px] w-full h-full object-cover"
+                    alt="card-1"
+                    loading="lazy"
+                  />
+                  <div
+                    class="info xl:hidden absolute bottom-2 right-2 flex items-center justify-center rounded-[12px] w-[48px] h-[48px] bg-[#06040E] text-[#ffffff]"
+                  >
+                    <a href="example.com">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="none"
+                      >
+                        <path
+                          fill="#EFEFF0"
+                          d="M14.25 6.5a.75.75 0 1 1-1.5 0V4.312l-3.72 3.72a.751.751 0 1 1-1.062-1.063l3.72-3.719H9.5a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75v4ZM11.5 8a.75.75 0 0 0-.75.75v4h-7.5v-7.5h4a.75.75 0 0 0 0-1.5H3A1.25 1.25 0 0 0 1.75 5v8A1.25 1.25 0 0 0 3 14.25h8A1.25 1.25 0 0 0 12.25 13V8.75A.75.75 0 0 0 11.5 8Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div
+                    class="view-site hidden xl:block absolute top-44 w-full h-56 rounded-t-full translate-y-[400%] group-hover:translate-y-0 transition-transform duration-300 bg-[#ffffff]"
+                  >
+                    <div
+                      class="content flex items-center text-center justify-center p-12"
+                    >
+                      <a
+                        href="example.com"
+                        class="text-[25px] text-center font-medium text-[#06040E]"
+                      >
+                        View Site
+                        <i
+                          class="fa-solid fa-caret-right relative text-center text-[10px] -top-[0.2rem]"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item-4 relative group animate-gallery-items flex items-end md:items-start xl:items-end 3xl:items-start justify-center overflow-hidden xl:rounded-[20px] -mt-[2.4rem] md:-mt-[5rem] lg:-mt-[3.5rem] xl:-mt-[4.7rem] 3xl:-mt-[5.5rem] opacity-0 transform translate-y-[50px]"
+              >
+                <div
+                  class="frame relative xl:absolute flex items-end md:items-start xl:items-end 3xl:items-start justify-center aspect-[311/401] md:aspect-[11/15] lg:aspect-[801/1005] xl:aspect-[1143/1424] 3xl:aspect-[344/430] h-auto w-auto overflow-hidden cursor-pointer"
+                >
+                  <img
+                    src="image/gallery-cart8-img.avif"
+                    class="rounded-[19px] w-full h-full object-cover xl:hover-none"
+                    alt="card-1"
+                    loading="lazy"
+                  />
+                  <div
+                    class="info xl:hidden absolute bottom-2 right-2 flex items-center justify-center rounded-[12px] w-[48px] h-[48px] bg-[#06040E] text-[#ffffff]"
+                  >
+                    <a href="example.com">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="none"
+                      >
+                        <path
+                          fill="#EFEFF0"
+                          d="M14.25 6.5a.75.75 0 1 1-1.5 0V4.312l-3.72 3.72a.751.751 0 1 1-1.062-1.063l3.72-3.719H9.5a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75v4ZM11.5 8a.75.75 0 0 0-.75.75v4h-7.5v-7.5h4a.75.75 0 0 0 0-1.5H3A1.25 1.25 0 0 0 1.75 5v8A1.25 1.25 0 0 0 3 14.25h8A1.25 1.25 0 0 0 12.25 13V8.75A.75.75 0 0 0 11.5 8Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div
+                    class="view-site hidden xl:block absolute top-[16.2rem] w-full h-56 rounded-t-full translate-y-[400%] group-hover:translate-y-0 transition-transform duration-300 bg-[#ffffff]"
+                  >
+                    <div
+                      class="content flex items-center text-center justify-center p-12"
+                    >
+                      <a
+                        href="example.com"
+                        class="text-[25px] text-center font-medium text-[#06040E]"
+                      >
+                        View Site
+                        <i
+                          class="fa-solid fa-caret-right relative text-center text-[10px] -top-[0.2rem]"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="Turn-your-fans-and-customers-into-sales-people pt-0 pl-6 pb-20 pr-6 lg:pt-32 lg:pl-20 lg:pb-32 lg:pr-20 bg-[#E1EDF2]"
+      >
+        <div
+          class="Turn-your-fans-and-customers-into-sales-people-main-conatiner container grid grid-cols-4 lg:grid-cols-12 gap-2.5 3xl:max-w-[107rem] mx-auto"
+        >
+          <div
+            class="Turn-your-fans-and-customers-into-sales-people-headline col-span-full lg:col-span-6 text-left mb-8"
+          >
+            <div
+              class="text-header w-[318px] md:w-[370px] lg:w-[278px] xl:w-[488px] mb-4"
+            >
+              <h1
+                class="text-[26px] md:text-[30px] lg:text-[36px] xl:text-[40px] text-left text-[#1F1738] font-medium leading-[30px] md:leading-[35px] lg:leading-[40px] xl:leading-[44px] tracking-[-1px]"
+              >
+                Turn your fans and customers into salespeople
+              </h1>
+            </div>
+
+            <div
+              class="text-body w-[258px] md:w-[426px] lg:w-[372px] xl:w-[486.91px] 3xl:w-[522px]"
+            >
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-left text-[#1F1738] font-normal leading-[24px] md:leading-[28px] lg:leading-[32px] tracking-[-0.5px]"
+              >
+                Affiliate marketing is built right into Podia and works with all
+                product types, no third-party integrations required.
+              </p>
+            </div>
+          </div>
+          <ul
+            class="Turn-your-fans-and-customers-into-sales-people-list animate-Turn-your-fans-section grid grid-cols-4 gap-8 col-span-full lg:col-span-6"
+          >
+            <li
+              class="Turn-your-fans-and-customers-into-sales-people-list-item col-span-4 animate-Turn-your-fans-list-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#A5C8D8] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div class="text-content w-full">
+                  <div
+                    class="list-title flex items-center w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#1F1738] font-medium"
+                    >
+                      Your program, your terms
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal"
+                    >
+                      Set custom commission amounts for any product, or use a
+                      default site-wide commission structure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="growing-you-business-is-a-simple-list-item col-span-4 animate-Turn-your-fans-list-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#A5C8D8] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-medium"
+                    >
+                      Public or private
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[258px] md:max-w-[648px] lg:max-w-[343.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      Let any customer sign up, or keep your affiliate program
+                      invite-only. You have full control over how you run your
+                      affiliate marketing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="growing-you-business-is-a-simple-list-item col-span-4 animate-Turn-your-fans-list-items opacity-0 transform translate-y-[50px]"
+            >
+              <div class="list-item-content flex items-start gap-6">
+                <div
+                  class="list-icon flex items-center justify-center w-[50px] h-10 rounded-[8px] text-center text-[12px] md:text-[12px] text-[#06040E] bg-[#A5C8D8] md:mt-[3px] xl:mt-1.5"
+                >
+                  <img
+                    src="image/email-checkIcon-svg.svg"
+                    alt="checkIcon"
+                    class="h-3 w-3"
+                  />
+                </div>
+                <div
+                  class="text-content flex flex-col items-start justify-center w-full"
+                >
+                  <div
+                    class="list-title w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] mb-2"
+                  >
+                    <p
+                      class="text-[22px] md:text-[32px] text-[#06040E] font-medium"
+                    >
+                      Payouts made easy
+                    </p>
+                  </div>
+                  <div
+                    class="list-para w-full max-w-[263px] md:max-w-[648px] lg:max-w-[344.52px] xl:max-w-[515.5px] 2xl:max-w-[540px] 3xl:max-w-[632px] 4xl:max-w-full"
+                  >
+                    <p
+                      class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#06040E] font-normal"
+                    >
+                      We’ll do the math for you every month and tell you who’s
+                      owed what, so payouts are fast and simple.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="frequently-asked-questions flex items-center justify-start text-left container md:max-w-full bg-[#E1EDF2] pt-[80px] pr-6 pb-[117.5px] pl-6 lg:pt-[128px] lg:pr-20 lg:pb-[264.6px] lg:pl-20"
+      >
+        <div
+          class="frequently-asked-question-content container grid grid-cols-1 gap-8 md:gap-12 lg:grid-cols-2 3xl:max-w-[107rem] mx-auto"
+        >
+          <div
+            class="header w-[327px] md:w-[720px] lg:w-[262px] xl:w-[486px] 2xl:w-full"
+          >
+            <h3
+              class="text-[26px] md:text-[30px] lg:text-[36px] xl:text-[40px] text-[#1F1738] font-medium md:tracking-[-1px] lg:leading-[38px]"
+            >
+              Frequently asked questions
+            </h3>
+          </div>
+          <div
+            class="asked-questions animate-asked-questions grid grid-cols-1 gap-6 md:gap-8"
+          >
+            <div
+              class="question-content animate-questions flex items-start gap-[20px] opacity-0 transform translate-y-[50px]"
+            >
+              <div
+                class="plus-icon flex items-center justify-center w-[28px] h-[28px] bg-[#1F1738] rounded-[50%] text-center"
+              >
+                <span class="text-[14px] text-white cursor-pointer">
+                  <i class="fa-solid fa-plus" id="plus-Icon"></i>
+                  <i class="fa-solid fa-minus hidden" id="minusIcon"></i>
+                </span>
+              </div>
+              <div
+                class="question w-[276.5px] md:w-[452.78px] lg:w-[334.48px] xl:w-[524.56px] 2xl:w-[624px] 4xl:w-full flex items-center"
+              >
+                <h3
+                  class="text-[18px] md:text-[20px] lg:text-[24px] xl:text-[32px] text-[#1F1738] font-medium lg:font-normal 2xl:font-medium leading-[21px] lg:leading-[30px] xl:leading-[36px] group cursor-pointer"
+                >
+                  <span
+                    class="bg-[length:0%_3px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:100%_3px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                  >
+                    What kinds of things can I sell with Podia?
+                  </span>
+                </h3>
+              </div>
+            </div>
+            <div
+              class="answer hidden w-[324px] md:w-[672px] lg:w-[412.72px] xl:w-[570.5px] 2xl:w-[556px] 3xl:w-[648px] 4xl:w-[792px] 4xl:max-w-full pt-[0.5rem] md:pt-[0.2rem] pr-0 pb-0 pl-[50px]"
+            >
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal cursor-pointer mb-4"
+              >
+                You can sell digital downloads, online courses, coaching,
+                webinars, and pretty much any type of file you can think of. We
+                have customers who sell ebooks, printables, self-paced courses,
+                cohort courses, access-limited courses, coaching sessions, live
+                webinars, prerecorded webinars, product bundles, templates, and
+                so much more.
+              </p>
+
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal cursor-pointer"
+              >
+                You can also give away products for free, like free courses,
+                discovery calls, and lead magnets. Podia handles all product
+                hosting and file delivery. At this time, Podia does not have a
+                feature for selling physical products.
+              </p>
+            </div>
+
+            <div
+              class="question-content animate-questions flex items-start gap-[20px] opacity-0 transform translate-y-[50px]"
+            >
+              <div
+                class="plus-icon flex items-center justify-center w-[28px] h-[28px] bg-[#1F1738] rounded-[50%] text-center"
+              >
+                <span class="text-[14px] text-white cursor-pointer">
+                  <i class="fa-solid fa-plus" id="plus-Icon"></i>
+                  <i class="fa-solid fa-minus hidden" id="minusIcon"></i>
+                </span>
+              </div>
+              <div
+                class="question w-[276.5px] md:w-[452.78px] lg:w-[334.48px] xl:w-[524.56px] 2xl:w-[624px] xl:w-full flex items-center"
+              >
+                <h3
+                  class="text-[18px] md:text-[20px] lg:text-[24px] xl:text-[32px] text-[#1F1738] font-medium lg:font-normal 2xl:font-medium leading-[21px] lg:leading-[30px] xl:leading-[36px] group cursor-pointer"
+                >
+                  <span
+                    class="bg-[length:0%_3px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:100%_3px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                  >
+                    Can I build landing pages in Podia?
+                  </span>
+                </h3>
+              </div>
+            </div>
+            <div
+              class="answer hidden w-[324px] md:w-[672px] lg:w-[412.72px] xl:w-[570.5px] 2xl:w-[556px] 3xl:w-[648px] 4xl:w-[792px] 4xl:max-w-full pt-[0.5rem] md:pt-[0.2rem] pr-0 pb-0 pl-[50px]"
+            >
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal cursor-pointer"
+              >
+                Absolutely! You can use the Podia website tool to create a full
+                website, stand-alone landing pages, or both. You can also decide
+                whether or not each page has a site header. No matter what you
+                create, you’ll have access to the same great library of website
+                sections and design features.
+              </p>
+            </div>
+
+            <div
+              class="question-content animate-questions flex items-start gap-[20px] opacity-0 transform translate-y-[50px]"
+            >
+              <div
+                class="plus-icon flex items-center justify-center w-[28px] h-[28px] bg-[#1F1738] rounded-[50%] text-center"
+              >
+                <span class="text-[14px] text-white cursor-pointer">
+                  <i class="fa-solid fa-plus" id="plus-Icon"></i>
+                  <i class="fa-solid fa-minus hidden" id="minusIcon"></i>
+                </span>
+              </div>
+              <div
+                class="question w-[276.5px] md:w-[452.78px] lg:w-[334.48px] xl:w-[524.56px] 2xl:w-[624px] 4xl:w-full flex items-center"
+              >
+                <h3
+                  class="text-[18px] md:text-[20px] lg:text-[24px] xl:text-[32px] text-[#1F1738] font-medium lg:font-normal 2xl:font-medium leading-[21px] lg:leading-[30px] xl:leading-[36px] group cursor-pointer"
+                >
+                  <span
+                    class="bg-[length:0%_3px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:100%_3px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                  >
+                    What payment methods can my customers use?
+                  </span>
+                </h3>
+              </div>
+            </div>
+            <div
+              class="answer hidden w-[324px] md:w-[672px] lg:w-[412.72px] xl:w-[570.5px] 2xl:w-[556px] 3xl:w-[648px] 4xl:w-[792px] 4xl:max-w-full pt-[0.5rem] md:pt-[0.2rem] pr-0 pb-0 pl-[50px]"
+            >
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal cursor-pointer mb-4"
+              >
+                You can connect Stripe and PayPal as your payment processors.
+              </p>
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal cursor-pointer mb-4"
+              >
+                If you connect Stripe to Podia, you can accept credit card
+                payments for products, payment plans, and recurring
+                subscriptions. With Stripe you also get to accept alternative
+                payment methods, such as Google Pay, Apple Pay, iDeal, SEPA
+                Debit, Stripe Link, etc.
+              </p>
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal cursor-pointer"
+              >
+                If you connect PayPal to Podia, your customers will be able to
+                purchase your products through PayPal.
+              </p>
+            </div>
+
+            <div
+              class="question-content animate-questions flex items-start gap-[20px] opacity-0 transform translate-y-[50px]"
+            >
+              <div
+                class="plus-icon flex items-center justify-center w-[28px] h-[28px] bg-[#1F1738] rounded-[50%] text-center"
+              >
+                <span class="text-[14px] text-white cursor-pointer">
+                  <i class="fa-solid fa-plus" id="plus-Icon"></i>
+                  <i class="fa-solid fa-minus hidden" id="minusIcon"></i>
+                </span>
+              </div>
+              <div
+                class="question w-[276.5px] md:w-[452.78px] lg:w-[334.48px] xl:w-[524.56px] 2xl:w-[624px] 4xl:w-full flex items-center"
+              >
+                <h3
+                  class="text-[18px] md:text-[20px] lg:text-[24px] xl:text-[32px] text-[#1F1738] font-medium lg:font-normal 2xl:font-medium leading-[21px] lg:leading-[30px] xl:leading-[36px] group cursor-pointer"
+                >
+                  <span
+                    class="bg-[length:0%_3px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:100%_3px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                  >
+                    How do I get my money after someone pays me?
+                  </span>
+                </h3>
+              </div>
+            </div>
+            <div
+              class="answer hidden w-[324px] md:w-[672px] lg:w-[412.72px] xl:w-[570.5px] 2xl:w-[556px] 3xl:w-[648px] 4xl:w-[792px] 4xl:max-w-full pt-[0.5rem] md:pt-[0.2rem] pr-0 pb-0 pl-[50px]"
+            >
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal cursor-pointer"
+              >
+                It’s simple: connect your Stripe or PayPal account and anything
+                you earn on Podia will be deposited directly into your account.
+              </p>
+            </div>
+
+            <div
+              class="question-content animate-questions flex items-start gap-[20px] opacity-0 transform translate-y-[50px]"
+            >
+              <div
+                class="plus-icon flex items-center justify-center w-[28px] h-[28px] bg-[#1F1738] rounded-[50%] text-center"
+              >
+                <span class="text-[14px] text-white cursor-pointer">
+                  <i class="fa-solid fa-plus" id="plus-Icon"></i>
+                  <i class="fa-solid fa-minus hidden" id="minusIcon"></i>
+                </span>
+              </div>
+              <div
+                class="question w-[276.5px] md:w-[452.78px] lg:w-[334.48px] xl:w-[524.56px] 2xl:w-[624px] 4xl:w-full flex items-center"
+              >
+                <h3
+                  class="text-[18px] md:text-[20px] lg:text-[24px] xl:text-[32px] text-[#1F1738] font-medium lg:font-normal 2xl:font-medium leading-[21px] lg:leading-[30px] xl:leading-[36px] group cursor-pointer"
+                >
+                  <span
+                    class="bg-[length:0%_3px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:100%_3px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                  >
+                    What languages and currencies does Podia support?
+                  </span>
+                </h3>
+              </div>
+            </div>
+            <div
+              class="answer hidden w-[324px] md:w-[672px] lg:w-[412.72px] xl:w-[570.5px] 2xl:w-[556px] 3xl:w-[648px] 4xl:w-[792px] 4xl:max-w-full pt-[0.5rem] md:pt-[0.2rem] pr-0 pb-0 pl-[50px]"
+            >
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal cursor-pointer"
+              >
+                We support 11 languages and more than 20 global currencies. You
+                can find a full list of supported languages here, and our
+                supported currencies here.
+              </p>
+            </div>
+
+            <div
+              class="question-content animate-questions flex items-start gap-[20px] opacity-0 transform translate-y-[50px]"
+            >
+              <div
+                class="plus-icon flex items-center justify-center w-[28px] h-[28px] bg-[#1F1738] rounded-[50%] text-center"
+              >
+                <span class="text-[14px] text-white cursor-pointer">
+                  <i class="fa-solid fa-plus" id="plus-Icon"></i>
+                  <i class="fa-solid fa-minus hidden" id="minusIcon"></i>
+                </span>
+              </div>
+              <div
+                class="question w-[276.5px] md:w-[452.78px] lg:w-[334.48px] xl:w-[524.56px] 2xl:w-[624px] 4xl:w-full flex items-center"
+              >
+                <h3
+                  class="text-[18px] md:text-[20px] lg:text-[24px] xl:text-[32px] text-[#1F1738] font-medium lg:font-normal 2xl:font-medium leading-[21px] lg:leading-[30px] xl:leading-[36px] group cursor-pointer"
+                >
+                  <span
+                    class="bg-[length:0%_3px] bg-no-repeat bg-left-bottom transition-all duration-300 group-hover:bg-[length:100%_3px] bg-gradient-to-r from-[#1F1738] to-[#1F1738]"
+                  >
+                    How does Podia handle sales tax?
+                  </span>
+                </h3>
+              </div>
+            </div>
+            <div
+              class="answer hidden w-[324px] md:w-[672px] lg:w-[412.72px] xl:w-[570.5px] 2xl:w-[556px] 3xl:w-[648px] 4xl:w-[792px] 4xl:max-w-full pt-[0.5rem] md:pt-[0.2rem] pr-0 pb-0 pl-[50px]"
+            >
+              <p
+                class="text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-[#1F1738] font-normal cursor-pointer mb-4 xl:mb-10"
+              >
+                Podia can make tax time less stressful with global tax support.
+                While Podia doesn’t file or remit your taxes for you, you can
+                collect taxes (and addresses, if you need them) from 230 tax
+                jurisdictions across all payment methods.
+              </p>
+
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="svg relative bottom-12 md:bottom-[5.9rem] lg:bottom-[7.9rem] xl:bottom-[9.9rem] 2xl:bottom-[13.9rem] 3xl:bottom-72"
+      >
+        <svg
+          class="block w-full inset-0 h-auto 3xl:h-[130%]"
+          viewBox="0 0 1440 160"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,160 C480,20 960,20 1440,160" fill="#A5C8D8"></path>
+        </svg>
+      </div>
+
+      <section
+        class="get-ourfree-account relative -mt-[3.1rem] md:-mt-24 lg:-mt-32 xl:-mt-40 2xl:-mt-56 3xl:-mt-[18.1rem] overflow-visible flex items-center justify-center container md:max-w-full py-28 px-6 md:py-40 lg:px-20 xl:py-[120px] bg-[#A5C8D8]"
+      >
+        <!-- Top-Left SVG -->
+        <div class="ctaBanner__background-shape-1 | relative z-0">
+          <svg
+            class="ctaBanner__background-shape-1 | ctaBanner__shape absolute w-[74px] h-[74px] md:top-52 md:left-[27rem] lg:-top-20 lg:left-[46rem] xl:left-[66rem] 2xl:left-[76rem] 4xl:left-[94rem]"
+            viewBox="0 0 89 89"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.7353 73.9767C5.33224 72.5289 2.63071 71.8051 1.40111 69.6753C0.171509 67.5456 0.89588 64.8422 2.34462 59.4354L15.4056 10.6913C16.8544 5.28406 17.5789 2.58045 19.7087 1.35085C21.8385 0.121259 24.5403 0.845331 29.944 2.29348C44.9705 6.32046 63.6728 11.3313 78.6993 15.3574C84.1024 16.8051 86.8039 17.5289 88.0335 19.6586C89.2631 21.7884 88.5387 24.4917 87.09 29.8985L74.0289 78.6432C72.5802 84.05 71.8558 86.7533 69.7261 87.9829C67.5963 89.2125 64.8948 88.4887 59.4917 87.0409C44.4649 83.0145 25.7622 78.0031 10.7353 73.9767Z"
+              fill="var(--color-decoration-light)"
+            ></path>
+          </svg>
+        </div>
+
+        <!-- Top-Right SVG -->
+        <div class="ctaBanner__background-shape-2 | relative z-0">
+          <svg
+            class="ctaBanner__background-shape-2 | ctaBanner__shape absolute w-[74px] h-[74px] top-32 left-52 md:top-52 md:left-[37rem] lg:top-44 lg:left-[38rem] xl:left-[48rem] 2xl:left-[56rem] xl:top-40 4xl:left-[60rem]"
+            viewBox="0 0 77 77"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M47.9945 74.303C35.8809 77.5488 26.0871 77.0429 18.6129 72.7853C11.2127 68.5079 5.8763 60.2628 2.60387 48.0499C-0.668558 35.837 -0.169707 26.0283 4.10041 18.6239C8.4444 11.1996 16.6732 5.86456 28.7867 2.61874C40.9742 -0.646879 50.768 -0.140983 58.1683 4.13642C65.6247 8.32766 70.9979 16.5629 74.2882 28.8422C77.5784 41.1214 77.0515 50.9732 72.7075 58.3974C68.4196 65.7355 60.1819 71.0374 47.9945 74.303Z"
+              fill="var(--color-decoration-dark)"
+            ></path>
+          </svg>
+        </div>
+
+        <!-- Bottom-Left SVG -->
+        <div class="ctaBanner__background-shape-3 | relative z-0">
+          <svg
+            class="ctaBanner__background-shape-3 | ctaBanner__shape absolute w-[86px] h-[86px] md:-top-96 md:left-48 lg:-top-56 lg:-left-24"
+            viewBox="0 0 81 81"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M38.6141 2.68916C45.0775 0.957292 48.3092 0.0913565 51.3825 0.914829C54.4557 1.7383 56.8215 4.10408 61.553 8.83564L72.5991 19.8817C77.3307 24.6133 79.6965 26.9791 80.5199 30.0523C81.3434 33.1256 80.4775 36.3573 78.7456 42.8207L74.7025 57.91C72.9706 64.3734 72.1047 67.6051 69.8549 69.8549C67.6051 72.1046 64.3734 72.9706 57.91 74.7024L42.8207 78.7456C36.3573 80.4775 33.1256 81.3434 30.0523 80.5199C26.9791 79.6965 24.6133 77.3307 19.8818 72.5991L8.83566 61.553C4.1041 56.8215 1.73832 54.4557 0.914848 51.3824C0.091376 48.3092 0.957312 45.0775 2.68918 38.614L6.73233 23.5248C8.46421 17.0614 9.33014 13.8297 11.5799 11.5799C13.8297 9.33012 17.0614 8.46419 23.5248 6.73231L38.6141 2.68916Z"
+              fill="var(--color-decoration-light)"
+            ></path>
+          </svg>
+        </div>
+
+        <!-- Bottom-Right SVG -->
+        <div class="ctaBanner__background-shape-4 | relative z-0">
+          <svg
+            class="ctaBanner__background-shape-4 | ctaBanner__shape absolute w-[74px] h-[74px] bottom-36 left-8 md:bottom-40 lg:bottom-48 xl:left-32"
+            viewBox="0 0 77 77"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M47.9945 74.303C35.8809 77.5488 26.0871 77.0429 18.6129 72.7853C11.2127 68.5079 5.8763 60.2628 2.60387 48.0499C-0.668558 35.837 -0.169707 26.0283 4.10041 18.6239C8.4444 11.1996 16.6732 5.86456 28.7867 2.61874C40.9742 -0.646879 50.768 -0.140983 58.1683 4.13642C65.6247 8.32766 70.9979 16.5629 74.2882 28.8422C77.5784 41.1214 77.0515 50.9732 72.7075 58.3974C68.4196 65.7355 60.1819 71.0374 47.9945 74.303Z"
+              fill="var(--color-decoration-base)"
+            ></path>
+          </svg>
+        </div>
+
+        <!-- Foreground shapes  -->
+
+        <!-- Top-Left SVG -->
+        <div class="ctaBanner__foreground-shape-1 | relative z-20">
+          <svg
+            class="ctaBanner__foreground-shape-1 | ctaBanner__shape absolute w-[73.45] h-[86.74px] bottom-0 left-[-5.4rem] md:-bottom-28 md:-left-8 lg:-bottom-32 lg:-left-8"
+            viewBox="0 0 75 89"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M45.4572 2.75703C50.5055 0.933237 53.0297 0.021345 55.3417 1.22841C57.6537 2.43547 58.3909 5.18701 59.8655 10.6901L72.9268 59.4354C74.3755 64.8422 75.0999 67.5456 73.8703 69.6753C72.6407 71.805 69.9373 72.5294 64.5305 73.9781L15.7852 87.0394C10.2819 88.514 7.5303 89.2513 5.32876 87.8521C3.12722 86.4529 2.65559 83.8113 1.71233 78.5281C-1.72405 59.2812 0.188408 43.4416 7.44967 31.0094C14.6043 18.7436 27.2734 9.32618 45.4572 2.75703Z"
+              fill="var(--color-decoration-dark)"
+            ></path>
+          </svg>
+        </div>
+
+        <!-- Top-Right SVG -->
+        <div class="ctaBanner__foreground-shape-2 | relative z-20">
+          <svg
+            class="ctaBanner__foreground-shape-2 | ctaBanner__shape absolute w-[72.8px] h-[76.39px] bottom-36 left-60 md:bottom-40 md:left-[31rem] lg:bottom-48 xl:left-[48rem] 2xl:left-[57rem] 4xl:left-[73rem] 4xl:bottom-44"
+            viewBox="0 0 78 82"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.4883 66.2939C5.89913 63.9925 1.60455 62.8417 0.686725 59.5954C-0.231103 56.3491 2.82521 53.12 8.93783 46.662L43.3885 10.2645C50.0362 3.24116 53.36 -0.270517 56.7769 0.645019C60.1937 1.56056 61.3164 6.26368 63.5618 15.6699L75.1982 64.4164C77.2629 73.0656 78.2952 77.3901 75.8772 79.7426C73.4591 82.0951 69.1646 80.9444 60.5754 78.6429L14.4883 66.2939Z"
+              fill="var(--color-decoration-dark)"
+            ></path>
+          </svg>
+        </div>
+
+        <!-- Bottom-Left SVG -->
+        <div class="ctaBanner__foreground-shape-3 | relative z-20">
+          <svg
+            class="ctaBanner__foreground-shape-3 | ctaBanner__shape absolute w-[85.19px] h-[85.19px] bottom-0 left-[20.5rem] md:left-[43rem] lg:-bottom-8 lg:left-[40rem] xl:left-[60rem] 2xl:left-[70rem] 4xl:left-[87rem]"
+            viewBox="0 0 81 81"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M38.6141 2.63844C45.0775 0.906572 48.3092 0.0406363 51.3825 0.864109C54.4557 1.68758 56.8215 4.05336 61.553 8.78492L72.5991 19.831C77.3307 24.5626 79.6965 26.9284 80.5199 30.0016C81.3434 33.0748 80.4775 36.3066 78.7456 42.77L74.7025 57.8592C72.9706 64.3227 72.1047 67.5544 69.8549 69.8041C67.6051 72.0539 64.3734 72.9198 57.91 74.6517L42.8207 78.6949C36.3573 80.4267 33.1256 81.2927 30.0523 80.4692C26.9791 79.6457 24.6133 77.28 19.8818 72.5484L8.83566 61.5023C4.1041 56.7707 1.73832 54.405 0.914848 51.3317C0.091376 48.2585 0.957312 45.0268 2.68918 38.5633L6.73233 23.4741C8.46421 17.0107 9.33014 13.7789 11.5799 11.5292C13.8297 9.2794 17.0614 8.41347 23.5248 6.68159L38.6141 2.63844Z"
+              fill="var(--color-decoration-base)"
+            ></path>
+          </svg>
+        </div>
+
+        <!-- Bottom-Right SVG -->
+        <div class="ctaBanner__foreground-shape-4 | relative z-20">
+          <svg
+            class="ctaBanner__foreground-shape-4 | ctaBanner__shape absolute w-[73.07px] h-[73.07px] top-44 left-4 md:top-36 md:left-20 lg:top-44 lg:left-48 xl:left-[21rem]"
+            viewBox="0 0 89 89"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.4639 73.756C5.06088 72.3083 2.35935 71.5844 1.12975 69.4547C-0.0998529 67.325 0.624517 64.6216 2.07326 59.2148L15.1342 10.4707C16.5831 5.06342 17.3075 2.3598 19.4373 1.13021C21.5671 -0.0993834 24.269 0.624689 29.6727 2.07283C44.6992 6.09982 63.4015 11.1106 78.428 15.1368C83.831 16.5844 86.5325 17.3082 87.7621 19.438C88.9917 21.5677 88.2674 24.2711 86.8186 29.6779L73.7575 78.4226C72.3088 83.8293 71.5844 86.5327 69.4547 87.7623C67.325 88.9919 64.6234 88.268 59.2204 86.8203C44.1935 82.7939 25.4908 77.7825 10.4639 73.756Z"
+              fill="var(--color-decoration-base)"
+            ></path>
+          </svg>
+        </div>
+
+        <div
+          class="banner-wrapper relative z-10 grid grid-cols-1 rounded-[40px] lg:rounded-[60px] bg-[#FFFFFF]"
+        >
+          <div
+            class="banner-wrapper-content flex flex-col items-center justify-center pt-[56px] pb-6 px-6 md:py-[72px] md:px-0 lg:px-12 lg:py-20 xl:px-52 2xl:pt-20 2xl:pb-20 2xl:px-72 4xl:px-[21rem]"
+          >
+            <div class="text-container grid grid-cols-1 gap-6 md:gap-8">
+              <div
+                class="text-header w-full md:w-[720px] lg:w-[585.5px] 4xl:w-full"
+              >
+                <h3
+                  class="text-[26px] md:text-[30px] lg:text-[40px] text-center font-sans font-semibold text-[#1F1738] leading-[28px] md:leading-[34px] lg:tracking-[-2px]"
+                >
+                  Try Podia free <br class="md:hidden" />
+                  for 30 days
+                </h3>
+              </div>
+
+              <div
+                class="text-body w-[88%] md:w-[400px] lg:w-[490.5px] 4xl:w-[768px] text-center mx-auto"
+              >
+                <p
+                  class="text-[16px] md:text-[18px] lg:text-[22px] text-center text-[#1F1738] font-sans font-samibold"
+                >
+                  Join thousands of creators just like you who use Podia to
+                  create websites, sell digital products, send great emails, and
+                  build online businesses.
+                </p>
+              </div>
+
+              <div
+                class="now-btn relative isolate py-3 px-4 md:p-4 lg:py-[18px] lg:px-6 w-[174.56px] md:w-[190.39px] lg:w-[226.2px] 2xl:w-[226px] mx-auto bg-[#1F1738] rounded-[10px] 2xl:rounded-[14px] group cursor-pointer"
+              >
+                <span
+                  class="relative text-[16px] md:text-[18px] lg:text-[20px] text-center text-[#E1EDF2] font-normal xl:font-medium z-10 block group-hover:text-[#10242F]"
+                  >Start your free trial</span
+                >
+
+                <span
+                  class="absolute left-0 top-0 h-full w-0 bg-[#E1EDF2] rounded-[10px] 3xl:rounded-[12px] transition-all duration-500 ease-in-out group-hover:w-full z-0"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <section
+          class="footer-section flex items-center justify-center w-full pt-6 px-6 pb-0 lg:px-20 bg-[#A5C8D8]"
+        >
+          <div
+            class="footer-content container md:grid md:grid-cols-8 md:gap-2 mb-8 2xl:max-w-[107rem] mx-auto"
+          >
+            <div
+              class="footer-branding w-full mb-16 md:mb-0 md:col-span-2 lg:col-span-1"
+            >
+              <svg
+                class="w-[80px] h-[27.72px]"
+                width="600"
+                height="208"
+                viewBox="0 0 600 208"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M426.204 23.724C426.204 10.4634 436.335 0.00793457 449.184 0.00793457C462.528 0.00793457 473.891 10.4634 473.891 23.724C473.891 37.4946 462.528 47.6951 449.184 47.6951C436.335 47.6951 426.204 37.4946 426.204 23.724Z"
+                  fill="#1F1738"
+                ></path>
+                <path
+                  d="M436.182 63.7851C433.617 63.0544 430.883 64.8724 430.883 67.5398V163.775C430.883 165.834 432.552 167.503 434.61 167.503H465.475C467.533 167.503 469.202 165.834 469.202 163.775V67.0485C469.202 64.3536 466.416 62.5343 463.844 63.3367C459.148 64.8015 454.206 65.5778 449.184 65.5778C444.636 65.5778 440.28 64.9523 436.182 63.7851Z"
+                  fill="#1F1738"
+                ></path>
+                <path
+                  d="M522.519 169.991C498.881 169.991 481.712 156.306 481.712 134.409C481.712 110.771 502.365 96.8365 538.942 93.1041L557.122 91.1791C558.811 91.0003 560.092 89.5764 560.092 87.8788C560.092 76.184 553.373 68.4705 541.679 68.4705C532.276 68.4705 525.089 73.7077 523.017 83.6386C522.613 85.5763 520.97 87.0907 518.992 87.0376L489.237 86.2388C487.153 86.1829 485.506 84.4219 485.757 82.3526C488.896 56.4193 512.058 37.6162 542.923 37.6162C575.021 37.6162 597.913 58.7663 597.913 89.1229V128.935C597.913 140.278 598.649 153.462 599.964 163.104C600.277 165.405 598.516 167.503 596.194 167.503H566.27C564.545 167.503 563.031 166.32 562.704 164.625C561.913 160.521 561.585 156.54 561.585 151.08C553.871 162.775 539.191 169.991 522.519 169.991ZM520.031 131.174C520.031 139.385 526.252 144.113 535.209 144.113C549.143 144.113 560.341 132.667 560.341 116.991C560.341 115.271 558.837 113.937 557.129 114.142L541.679 115.996C528.491 117.489 520.031 121.47 520.031 131.174Z"
+                  fill="#1F1738"
+                ></path>
+                <path
+                  d="M338.205 170.239C304.613 170.239 280.726 143.117 280.726 104.549C280.726 65.7328 304.613 38.6109 338.205 38.6109C353.88 38.6109 366.819 44.5827 375.777 55.0333V3.83879C375.777 1.78033 377.446 0.111623 379.504 0.111623H410.369C412.427 0.111623 414.096 1.78033 414.096 3.83879V163.775C414.096 165.833 412.427 167.502 410.369 167.502H379.504C377.446 167.502 375.777 165.833 375.777 163.775V153.817C366.819 164.267 353.88 170.239 338.205 170.239ZM319.294 104.549C319.294 124.455 331.735 138.638 348.655 138.638C365.824 138.638 378.016 124.455 378.016 104.549C378.016 84.3946 365.824 70.2116 348.655 70.2116C331.735 70.2116 319.294 84.6435 319.294 104.549Z"
+                  fill="#1F1738"
+                ></path>
+                <path
+                  d="M207.143 171.235C168.078 171.235 139.712 143.367 139.712 104.55C139.712 65.4846 168.078 37.6162 207.143 37.6162C246.457 37.6162 274.823 65.4846 274.823 104.55C274.823 143.367 246.457 171.235 207.143 171.235ZM178.279 104.55C178.279 124.705 190.223 138.888 207.143 138.888C224.312 138.888 236.256 124.705 236.256 104.55C236.256 84.1464 224.312 69.9634 207.143 69.9634C190.223 69.9634 178.279 84.1464 178.279 104.55Z"
+                  fill="#1F1738"
+                ></path>
+                <path
+                  d="M3.72717 207.992C1.66871 207.992 0 206.323 0 204.265V45.0752C0 43.0168 1.66871 41.348 3.72717 41.348H34.5918C36.6503 41.348 38.319 43.0168 38.319 45.0752V55.2822C47.2767 44.5828 60.2155 38.611 76.1403 38.611C109.732 38.611 133.619 65.7329 133.619 104.301C133.619 143.117 109.732 170.239 76.1403 170.239C60.2155 170.239 47.2767 164.267 38.319 153.319V204.265C38.319 206.323 36.6503 207.992 34.5918 207.992H3.72717ZM36.3284 104.301C36.3284 124.455 48.5208 138.638 65.6897 138.638C82.6097 138.638 95.051 124.207 95.051 104.301C95.051 84.3947 82.6097 70.2117 65.6897 70.2117C48.5208 70.2117 36.3284 84.3947 36.3284 104.301Z"
+                  fill="#1F1738"
+                ></path>
+              </svg>
+            </div>
+            <div
+              class="footer-nav w-full mb-20 md:col-span-6 lg:col-span-7 lg:ml-8"
+            >
+              <ul
+                class="list-items grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[20px] lg:gap-[8px] mt-[1rem] md:mt-0"
+              >
+                <li class="list-item">
+                  <h3
+                    class="text-[11px] text-[#1F1738] font-sans font-bold uppercase"
+                  >
+                    Platform
+                  </h3>
+                  <ul class="list-item-content mt-4">
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Website builder</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Online store</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Email marketing</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Pricing</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-item">
+                  <h3
+                    class="text-[11px] text-[#1F1738] font-sans font-bold uppercase"
+                  >
+                    Features
+                  </h3>
+                  <ul class="list-item-content mt-4">
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        >Online courses</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Digital downloads</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        >Webinars</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Coaching</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        >Community</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Landing pages</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Blogging</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Newsletters</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Automations</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Integrations</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="list-item">
+                  <h3
+                    class="text-[11px] text-[#10242F] font-sans font-bold uppercase"
+                  >
+                    Resources
+                  </h3>
+                  <ul class="list-item-content mt-4">
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Changelog</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Podia alternatives</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Demo</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Blog</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="list-item">
+                  <h3
+                    class="text-[11px] text-[#1F1738] font-sans font-bold uppercase"
+                  >
+                    Podia
+                  </h3>
+                  <ul class="list-item-content mt-4">
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        >About</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Branding</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold lg-only:tracking-[-1px]"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Become an affiliate</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Reviews</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="list-item">
+                  <h3
+                    class="text-[11px] text-[#1F1738] font-sans font-bold uppercase"
+                  >
+                    Support
+                  </h3>
+                  <ul class="list-item-content mt-4">
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                        >Contact us</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Help center</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Getting started</a
+                      >
+                    </li>
+                    <li
+                      class="list-item-content-item text-[16px] text-[#1F1738] font-sans font-semibold"
+                    >
+                      <a
+                        href="example.com"
+                        class="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                      >
+                        Hire a Podia Pro</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="footer-credits flex items-start justify-start md:justify-center lg:justify-start md:col-span-6 lg:col-span-5"
+            >
+              <div
+                class="content grid grid-cols-1 gap-4 md:relative md:left-16 lg:left-36 xl:left-[11.5rem] 2xl:left-[12.1rem] 3xl:left-60"
+              >
+                <ul
+                  class="social-icons flex items-start justify-start gap-[20px]"
+                >
+                  <li class="social-icon text-[24px]">
+                    <a href="example.com"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li class="social-icon text-[24px]">
+                    <a href="example.com"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-icon text-[24px]">
+                    <a href="example.com"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-icon text-[24px]">
+                    <a href="example.com"
+                      ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                </ul>
+                <p
+                  class="text-[16px] text-[#1F1738] font-sans font-semibold md:font-bold lg:font-medium mt-[5px]"
+                >
+                  Podia Labs, Inc. © 2025
+                </p>
+
+                <ul
+                  class="ligal-links flex items-start justify-start gap-[30px] lg:gap-[24px] mt-[16px] lg:mt-[5px]"
+                >
+                  <li
+                    class="legal-link text-[16px] text-[#1F1738] font-sans font-semibold md:font-bold lg:font-medium"
+                  >
+                    <a href="example.com">Terms </a>
+                  </li>
+                  <li
+                    class="legal-link text-[16px] text-[#1F1738] font-sans font-semibold md:font-bold lg:font-medium"
+                  >
+                    <a href="example.com">Privacy </a>
+                  </li>
+                  <li
+                    class="legal-link text-[16px] text-[#1F1738] font-sans font-semibold md:font-bold lg:font-medium"
+                  >
+                    <a href="example.com">Cookie Preferences</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+  </body>
+  <script src="script.js" defer></script>
+</html>

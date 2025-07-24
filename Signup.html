@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="font.css" />
+
+    <link href="output.css" rel="stylesheet" />
+    <link rel="icon" href="image/favicon.svg" type="image/x-icon" />
+    <title>Podia:Signup</title>
+  </head>
+  <body
+    class="bg-gradient-to-tr from-cyan-400 via-purple-600 to-pink-500 min-h-screen flex items-center justify-center"
+  >
+    <form
+      id="loginForm"
+      action="#"
+      class="relative flex items-center justify-center md:justify-start w-[80%] md:w-[655px] md:h-[600px] xl:w-[636.797px] p-6 md:py-7 h-[60%] bg-[#FFFFFF] rounded-2xl"
+    >
+      <div
+        class="form-content flex flex-col items-center justify-center md:justify-start gap-8 w-full"
+      >
+        <div class="header flex items-start justify-center">
+          <h1 class="text-2xl font-bold text-[#010000]">Sign up</h1>
+        </div>
+
+        <div
+          class="input-login flex flex-col w-full max-w-sm md:max-w-md lg:max-w-lg space-y-2"
+        >
+          <!-- Label -->
+          <label for="username" class="text-sm text-[#A9A9A9] font-normal"
+            >Name</label
+          >
+
+          <!-- Input  -->
+          <div
+            class="flex items-center gap-3 py-2 px-1 shadow-[0_3px_0_#A9A9A9]/30 focus-within:shadow-[0_3px_0_#A9A9A9]/60 transition-shadow duration-300"
+          >
+            <i class="fa-solid fa-user text-[#A9A9A9] text-[16px]"></i>
+
+            <input
+              type="text"
+              id="username"
+              placeholder="Type your username"
+              class="w-full outline-none text-sm text-[#A9A9A9] placeholder-[#A9A9A9] bg-transparent"
+            />
+          </div>
+        </div>
+
+        <div
+          class="input-email flex flex-col w-full max-w-sm md:max-w-md lg:max-w-lg space-y-2"
+        >
+          <!-- Label -->
+          <label for="username" class="text-sm text-[#A9A9A9] font-normal"
+            >Email</label
+          >
+
+          <!-- Input  -->
+          <div
+            class="flex items-center gap-3 py-2 px-1 shadow-[0_3px_0_#A9A9A9]/30 focus-within:shadow-[0_3px_0_#A9A9A9]/60 transition-shadow duration-300"
+          >
+            <i class="fa-solid fa-envelope text-[#A9A9A9] text-[16px]"></i>
+
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter your email"
+              class="w-full outline-none text-sm text-[#A9A9A9] placeholder-[#A9A9A9] bg-transparent"
+            />
+          </div>
+        </div>
+
+        <div
+          class="input-password flex flex-col w-full max-w-sm md:max-w-md lg:max-w-lg space-y-2"
+        >
+          <!-- Label -->
+          <label for="username" class="text-sm text-[#A9A9A9] font-normal"
+            >Password</label
+          >
+
+          <!-- Input  -->
+          <div
+            class="relative flex items-center gap-3 py-2 px-1 shadow-[0_3px_0_#A9A9A9]/30 focus-within:shadow-[0_3px_0_#A9A9A9]/60 transition-shadow duration-300"
+          >
+            <i class="fa-solid fa-lock text-[#A9A9A9] text-[16px]"></i>
+
+            <input
+              type="password"
+              id="password"
+              placeholder="Type your password"
+              class="w-full outline-none text-sm text-[#A9A9A9] placeholder-[#A9A9A9] bg-transparent"
+            />
+
+            <!-- Eye icon -->
+            <i
+              id="togglePassword"
+              class="fa-regular fa-eye text-[#A9A9A9] text-[16px] absolute right-2 cursor-pointer active"
+              onclick="togglePasswordVisibility()"
+            ></i>
+          </div>
+
+          <label
+            for="username"
+            class="text-sm text-[#A9A9A9] font-normal cursor-pointer hover:underline w-fit"
+            >Minimum 7 characters.
+          </label>
+        </div>
+
+        <div class="btn">
+          <button
+            onclick="validateForm(event)"
+            class="text-sm xl:text-md font-bold text-[#F1E0FD] bg-gradient-to-tr from-cyan-400 via-purple-600 to-pink-500 px-16 py-3 md:px-32 rounded-[20px] cursor-pointer"
+          >
+            Create account
+          </button>
+        </div>
+
+        <!-- already have an account? login -->
+        <div class="flex flex-col items-center mt-6">
+          <p class="flex gap-2 text-sm xl:text-md text-[#A9A9A9]">
+            <a
+              href="Login.html"
+              class="bg-gradient-to-tr from-cyan-400 via-purple-600 to-pink-500 bg-clip-text text-transparent font-semibold hover:underline"
+            >
+              LOGIN
+            </a>
+            if you already have an account.
+          </p>
+        </div>
+      </div>
+    </form>
+  </body>
+
+  <script src="signup.js" defer></script>
+</html>
