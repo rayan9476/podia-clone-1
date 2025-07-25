@@ -218,9 +218,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  window.location.href = "Login.html";
-}
+// if (localStorage.getItem("isLoggedIn") !== "true") { disable for vercel
+//   window.location.href = "Login.html";
+// }
 
 // check login state when the page loads
 window.addEventListener("DOMContentLoaded", () => {
@@ -228,11 +228,11 @@ window.addEventListener("DOMContentLoaded", () => {
   const isLoggedIn = localStorage.getItem("isLoggedIn");
 
   if (loginBtn && isLoggedIn === "true") {
-    loginBtn.textContent = "Logout";
+    // loginBtn.textContent = "Logout";
 
     loginBtn.onclick = () => {
-      localStorage.removeItem("isLoggedIn");
-      alert("👋 Logged out successfully!");
+      // localStorage.removeItem("isLoggedIn");
+      // alert("👋 Logged out successfully!");
       window.location.href = "login.html";
     };
   }

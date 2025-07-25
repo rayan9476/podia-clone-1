@@ -1,6 +1,4 @@
-//  Add toggle for nabar overlay for mobile 
-
-
+//  Add toggle for nabar overlay for mobile
 
 document.addEventListener("DOMContentLoaded", () => {
   const Toggle = () => {
@@ -373,9 +371,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  window.location.href = "login.html";
-}
+// if (localStorage.getItem("isLoggedIn") !== "true") { //desable for vercel
+//   window.location.href = "login.html";
+// }
 
 // check login state when the page loads
 window.addEventListener("DOMContentLoaded", () => {
@@ -383,11 +381,11 @@ window.addEventListener("DOMContentLoaded", () => {
   const isLoggedIn = localStorage.getItem("isLoggedIn");
 
   if (loginBtn && isLoggedIn === "true") {
-    loginBtn.textContent = "Logout";
+    // loginBtn.textContent = "Logout";
 
     loginBtn.onclick = () => {
-      localStorage.removeItem("isLoggedIn");
-      alert("👋 Logged out successfully!");
+      // localStorage.removeItem("isLoggedIn");
+      // alert("👋 Logged out successfully!");
       window.location.href = "login.html";
     };
   }
@@ -409,15 +407,14 @@ function toggleSubnav() {
     // It's currently hidden → now opening
 
     dropdownTrigger1.style.backgroundColor = "#10242F"; // active bg
-   dropdownText.style.color = "#E1EDF2"; // active text
-   arrow.style.color = "#E1EDF2"; // active text
-
+    dropdownText.style.color = "#E1EDF2"; // active text
+    arrow.style.color = "#E1EDF2"; // active text
   } else {
     // It's visible → now closing
 
     dropdownTrigger1.style.backgroundColor = "#F5F5F5"; // reset bg color
-    dropdownText.style.color  = "#10242F"; // reset text color
-    arrow.style.color  = "#10242F"; // reset text color
+    dropdownText.style.color = "#10242F"; // reset text color
+    arrow.style.color = "#10242F"; // reset text color
   }
   arrow.classList.toggle("rotate-180"); //  arrow rotateswhen dropdown open
 }

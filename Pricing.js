@@ -1,5 +1,4 @@
-//  Add toggle for nabar overlay for mobile 
-
+//  Add toggle for nabar overlay for mobile
 
 document.addEventListener("DOMContentLoaded", () => {
   const Toggle = () => {
@@ -60,21 +59,21 @@ const QuestionToggle = () => {
 
 QuestionToggle();
 
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  window.location.href = "Login.html";
-}
+// if (localStorage.getItem("isLoggedIn") !== "true") { disable for vercel
+//   window.location.href = "Login.html";
+// }
 
 // check login state when the page loads
 window.addEventListener("DOMContentLoaded", () => {
   const loginBtn = document.getElementById("Loginbtn");
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
+  // const isLoggedIn = localStorage.getItem("isLoggedIn");
 
   if (loginBtn && isLoggedIn === "true") {
-    loginBtn.textContent = "Logout";
+    // loginBtn.textContent = "Logout";
 
     loginBtn.onclick = () => {
-      localStorage.removeItem("isLoggedIn");
-      alert("👋 Logged out successfully!");
+      // localStorage.removeItem("isLoggedIn");
+      // alert("👋 Logged out successfully!");
       window.location.href = "login.html";
     };
   }
@@ -85,8 +84,7 @@ function toggleSubnav() {
   const subnav = document.getElementById("subnav");
   const arrow = document.getElementById("arrowIcon");
   const dropdownTrigger1 = document.getElementById("dropdownTrigger1");
-    const dropdownText = document.querySelector("#dropdownText");
-  
+  const dropdownText = document.querySelector("#dropdownText");
 
   const isHidden = subnav.classList.contains("hidden"); //  check
 
@@ -103,8 +101,8 @@ function toggleSubnav() {
     // It's visible → now closing
 
     dropdownTrigger1.style.backgroundColor = "#F5F5F5"; // reset bg color
-        dropdownText.style.color = "#06040E"; // reset text color
-        arrow.style.color = "#06040E"; // reset text color
+    dropdownText.style.color = "#06040E"; // reset text color
+    arrow.style.color = "#06040E"; // reset text color
   }
   arrow.classList.toggle("rotate-180"); //  arrow rotateswhen dropdown open
 }
