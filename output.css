@@ -5183,6 +5183,11 @@
       flex-direction: column;
     }
   }
+  .xl\:flex-row {
+    @media (width >= 80rem) {
+      flex-direction: row;
+    }
+  }
   .xl\:items-end {
     @media (width >= 80rem) {
       align-items: flex-end;
@@ -5361,6 +5366,11 @@
   .xl\:pl-32 {
     @media (width >= 80rem) {
       padding-left: calc(var(--spacing) * 32);
+    }
+  }
+  .xl\:text-left {
+    @media (width >= 80rem) {
+      text-align: left;
     }
   }
   .xl\:text-\[16px\] {
