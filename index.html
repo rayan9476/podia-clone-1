@@ -102,6 +102,9 @@
       name="twitter:image"
       content="https://yourdomain.com/image/twitter-card-website-index.png"
     />
+
+    <!-- Polyfill for older browsers (if needed) -->
+    <script nomodule src="https://cdn.jsdelivr.net/npm/modernizr"></script>
   </head>
   <body>
     <div
@@ -397,7 +400,7 @@
       </header>
     </div>
 
-    <div class="main" data-scroll-Container>
+    <div class="main" data-scroll-container>
       <section
         class="hero-section relative flex items-center justify-center w-full mt-[-1px] pt-[136px] px-6 md:pt-[158px] h-[550px] lg:pt-[120px] lg:pb-20 lg:px-8 xl:pt-[140px] 2xl:pt-[208px] 2xl:px-20 2xl:pb-[233px] 3xl:pt-[180px] 3xl:pb-[238px] 4xl:pb-[278px] md:h-[700px] lg:h-[643px] xl:h-[701px] 2xl:h-[736px] 3xl:h-[797px] 4xl:h-[887px] overflow-hidden bg-[#A5C8D8]"
       >
@@ -2249,7 +2252,8 @@
         </div>
       </section>
 
-      <footer>
+
+       <footer >
         <section
           class="footer-section flex items-center justify-center w-full pt-6 px-6 pb-0 lg:px-20 bg-[#A5C8D8]"
         >
@@ -2664,7 +2668,11 @@
           </div>
         </section>
       </footer>
+      
+     
     </div>
+
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://unpkg.com/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>

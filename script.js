@@ -71,47 +71,6 @@ const anim = lottie.loadAnimation({
   },
 });
 
-// anim.addEventListener("DOMLoaded", function () {
-//   const canvas = document.querySelector("#lottie-container canvas");
-//   if (canvas) {
-//     canvas.removeAttribute("width");
-//     canvas.removeAttribute("height");
-//   }
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   // if (window.innerWidth >= 768) {
-//     // nitialize Locomotive
-//     const scrollContainer = document.querySelector(".main");
-//     const locoScroll = new LocomotiveScroll({
-//       el: scrollContainer,
-//       smooth: true,
-//       lerp: 0.07,
-//     });
-
-//     // GSAP ScrollTrigger with Locomotive
-//     gsap.registerPlugin(ScrollTrigger);
-//     ScrollTrigger.scrollerProxy(scrollContainer, {
-//       scrollTop(value) {
-//         return arguments.length
-//           ? locoScroll.scrollTo(value, 0, 0)
-//           : locoScroll.scroll.instance.scroll.y;
-//       },
-//       getBoundingClientRect() {
-//         return {
-//           top: 0,
-//           left: 0,
-//           width: window.innerWidth,
-//           height: window.innerHeight,
-//         };
-//       },
-//       pinType: scrollContainer.style.transform ? "transform" : "fixed",
-//     });
-
-//     locoScroll.on("scroll", ScrollTrigger.update);
-//     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-//     ScrollTrigger.refresh();
-
 document.addEventListener("DOMContentLoaded", () => {
   const scrollContainer = document.querySelector(".main");
 

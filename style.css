@@ -11,13 +11,18 @@
 }
 
 .active {
-  display: none ;
+  display: none;
 }
 
 html,
 body {
+  height: 100%;
   overflow-x: hidden;
   font-family: "Stabil Grotesk", sans-serif;
+}
+
+[data-scroll-container] {
+  overflow: hidden;
 }
 
 @font-face {
@@ -301,19 +306,13 @@ body {
   }
 }
 
-@media (min-width: 1280px)  {
+@media (min-width: 1280px) {
   #hamburger {
     display: none !important;
   }
 }
 
-
-
 /* styling for pricing page */
-
-
-
-
 
 .pricing__pricing-toggle-switch {
   display: inline-block;

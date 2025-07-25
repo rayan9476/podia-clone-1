@@ -6625,8 +6625,12 @@
   display: none;
 }
 html, body {
+  height: 100%;
   overflow-x: hidden;
   font-family: "Stabil Grotesk", sans-serif;
+}
+[data-scroll-container] {
+  overflow: hidden;
 }
 @font-face {
   font-family: "Stabil Grotesk";
