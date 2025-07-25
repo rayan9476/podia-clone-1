@@ -1,5 +1,4 @@
-//  Add toggle for nabar overlay for mobile 
-
+//  Add toggle for nabar overlay for mobile
 
 document.addEventListener("DOMContentLoaded", () => {
   const Toggle = () => {
@@ -71,8 +70,6 @@ const anim = lottie.loadAnimation({
     preserveAspectRatio: "none",
   },
 });
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const scrollContainer = document.querySelector(".main");
@@ -394,8 +391,8 @@ function toggleSubnav2() {
   if (isHidden) {
     // dropdown is open, so open it and apply active styles
     subnav.classList.remove("hidden");
-    dropdownTrigger.style.backgroundColor = "#10242F"; // active background
-    dropdownTrigger.style.color = "#E1EDF2"; // active text-color
+    dropdownTrigger.style.backgroundColor = "#452623"; // active background
+    dropdownTrigger.style.color = "#F6DDC4"; // active text-color
   } else {
     // dropdown is not  open, so close it and reset styles
     subnav.classList.add("hidden");

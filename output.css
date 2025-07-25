@@ -2073,6 +2073,13 @@
       }
     }
   }
+  .hover\:bg-\[\#F6DDC4\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #F6DDC4;
+      }
+    }
+  }
   .hover\:bg-\[\#FFFFFF\] {
     &:hover {
       @media (hover: hover) {
